@@ -1,11 +1,51 @@
 @import "../../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
-.navLinks_container {
-  nav {
-    .routes {
-      margin: 0 2rem;
-      a {
-        font-size: $font_md_1;
-      }
+nav {
+  .routes {
+    margin: 0 2rem;
+    a {
+      font-size: $font_md_1;
     }
+  }
+}
+@media screen and (max-width: 768px) {
+  @mixin navbar_toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 310px;
+    box-shadow: inset 0px 0px 8px #888888;
+    border-radius: 20px;
+    z-index: 20;
+  }
+  .nav_closer::before {
+    content: "";
+    background: #0000002d;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 19;
+  }
+
+  .navbar_visible {
+    @include navbar_toggle;
+    transition: all 0.3s ease;
+  }
+  .navbar_invisible {
+    @include navbar_toggle;
+    transform: translateX(-200%);
+    transition: all 0.3s ease;
+  }
+  .bg_dark {
+    background: $dark_bg;
+  }
+  .bg_light {
+    background: $light_bg;
   }
 }

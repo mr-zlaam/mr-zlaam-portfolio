@@ -14,7 +14,22 @@
   .theme_toggler {
     position: absolute;
     top: 50%;
-    right: 2rem;
+    right: 1rem;
     transform: translate(-50%, -50%);
+  }
+  .menu_bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav_container {
+    padding: 0 1rem;
+    .menu_bar {
+      display: inline;
+      position: absolute;
+      top: 35%;
+      right: 7rem;
+      z-index: 21;
+    }
   }
 }

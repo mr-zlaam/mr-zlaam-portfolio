@@ -133,6 +133,12 @@ html {
 * {
   font-size: $font_sm_5;
 }
+.visible {
+  display: inline;
+}
+.invisible {
+  display: none;
+}
 //
 @mixin link_animation {
   content: "";
