@@ -10,7 +10,12 @@
   top: 0;
   height: 80px;
   z-index: 20;
+  background: red;
   backdrop-filter: blur(3px);
+  .logo {
+    position: relative;
+    top: 0.7rem;
+  }
   .theme_toggler {
     position: absolute;
     top: 50%;
