@@ -1,0 +1,72 @@
+@import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+
+.home_parent {
+  position: relative;
+  top: 8rem;
+  .home_container {
+    width: 98%;
+    margin: auto;
+    .home_content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .home_about {
+        font-size: $font_5xl_1;
+        font-family: $font_bold;
+        margin: 2rem;
+        letter-spacing: 1px;
+      }
+      .about_img_container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        max-width: 490px;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+          -webkit-user-drag: none;
+          user-select: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  .home_parent {
+    // top: 7rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .home_content {
+    flex-direction: column-reverse;
+  }
+  .home_parent > .home_container > .home_content > .home_about {
+    font-size: $font_4xl_1;
+    text-align: center;
+  }
+  .home_parent > .home_container > .home_content > .about_img_container {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 583px) {
+  .home_parent {
+    top: 0;
+  }
+  .home_parent > .home_container > .home_content > .home_about {
+    font-size: $font_xl_4;
+    text-align: center;
+    width: 100%;
+  }
+  .home_parent > .home_container > .home_content > .about_img_container {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 291px) {
+  .home_parent > .home_container > .home_content > .home_about {
+    font-size: $font_xl-1;
+  }
+}

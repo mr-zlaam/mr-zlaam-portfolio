@@ -11,7 +11,7 @@ nav {
 html {
   cursor: $default;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1020px) {
   @mixin navbar_toggle {
     position: absolute;
     top: 0;
@@ -30,7 +30,7 @@ html {
     content: "";
     background: #0000002d;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
