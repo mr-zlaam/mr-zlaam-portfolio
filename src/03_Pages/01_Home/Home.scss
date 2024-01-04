@@ -1,8 +1,10 @@
 @import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
 
 .home_parent {
-  position: relative;
-  top: 8rem;
+  height: 84.9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .home_container {
     width: 98%;
     margin: auto;
@@ -34,12 +36,6 @@
     }
   }
 }
-@media screen and (max-width: 1260px) {
-  .home_parent {
-    // top: 7rem;
-  }
-}
-
 @media screen and (max-width: 940px) {
   .home_content {
     flex-direction: column-reverse;
@@ -53,9 +49,6 @@
   }
 }
 @media screen and (max-width: 583px) {
-  .home_parent {
-    top: 0;
-  }
   .home_parent > .home_container > .home_content > .home_about {
     font-size: $font_xl_4;
     text-align: center;
@@ -65,6 +58,7 @@
     max-width: 320px;
   }
 }
+
 @media screen and (max-width: 291px) {
   .home_parent > .home_container > .home_content > .home_about {
     font-size: $font_xl-1;
