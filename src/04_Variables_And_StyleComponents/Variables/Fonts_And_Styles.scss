@@ -1,6 +1,3 @@
-html {
-  font-size: 10px;
-}
 @font-face {
   font-family: Acorn_Regular;
   src: url("../MyFonts/Acorn-Regular.otf");
@@ -20,9 +17,9 @@ html {
 
 //FONT WEIGHTS
 $font_regular: Acorn_Regular;
-$font_md: Acorn_Md;
-$font_semi: Acorn_Semi;
-$font_bold: Acorn_Bold;
+$font_md: "Acorn_Md" cursive;
+$font_semi: "Acorn_Semi" cursive;
+$font_bold: "Acorn_Bold" cursive;
 
 //FONTS SIZES
 
@@ -127,4 +124,66 @@ a {
 }
 a::selection {
   background: transparent;
+  color: transparent;
+}
+//Global size
+html {
+  font-size: 10px;
+}
+* {
+  font-size: $font_sm_5;
+}
+//
+@mixin link_animation {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+@mixin link_animation_common_1 {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@mixin link_animation_common_2 {
+  position: relative;
+  padding-bottom: 20px;
+}
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta a {
+  padding-bottom: 4px;
+  font-size: 14px;
+  padding-right: 0.8rem;
+  text-decoration: none;
+}
+
+.link_animation_dark {
+  @include link_animation_common_2;
+}
+.link_animation_light {
+  @include link_animation_common_2;
+}
+
+.link_animation_dark:after {
+  @include link_animation;
+  background: #000;
+}
+.link_animation_light:after {
+  @include link_animation;
+  background: #fff;
+}
+
+.cta:hover .link_animation_dark:after {
+  @include link_animation_common_1;
+}
+.cta:hover .link_animation_light:after {
+  @include link_animation_common_1;
 }

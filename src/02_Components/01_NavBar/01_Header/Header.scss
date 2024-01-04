@@ -2,5 +2,9 @@
 
 .nav {
   font-family: $font_regular;
-  font-size: $font_sm_5;
+  background: gray;
+  padding: 2rem;
+}
+.hello {
+  text-decoration: none;
 }
