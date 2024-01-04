@@ -1,0 +1,14 @@
+@import "../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+@mixin commonProp {
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 2rem;
+}
+.child_container_light {
+  background: $light_bg;
+  @include commonProp;
+}
+.child_container_dark {
+  background: $dark_bg;
+  @include commonProp;
+}

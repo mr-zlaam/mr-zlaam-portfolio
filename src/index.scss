@@ -3,3 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  & a {
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd #28282b;
+}
+
+/* Webkit-based browsers (Chrome, Safari, newer versions of Edge) */
+*::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+  width: 50px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 30px;
+}
+
+/* Microsoft Edge and Internet Explorer */
+*::-ms-scrollbar-thumb {
+  width: 20px; /* Adjust the width as needed */
+}
+
+*::-ms-scrollbar-track {
+  background: #ffffff;
+  width: 50px;
+}
+*::selection {
+  background: #6b6b6b;
+  color: white;
+}

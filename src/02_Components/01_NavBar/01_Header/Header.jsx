@@ -1,14 +1,22 @@
-import {} from "react";
+// import { useContext } from "react";
 import "./Header.scss";
+// import { Context } from "../../../01_Context/Context";
 import { Link } from "react-router-dom";
+import HeaderLinks from "../02_HeaderLinks/HeaderLinks";
+import Theme from "../../03_Theme/Theme_toggler";
 const Header = () => {
+  // const { isDarkMode } = useContext(Context);
   return (
     <>
-      <div className="nav">
-        <span className="cta">
-          <Link className="link_animation_dark"> Shop now </Link>
-        </span>
-      </div>
+      <header className={`nav_container `}>
+        <Link className="logo">
+          <img src="/logo/siraj.png" alt="logo" width={60} />
+        </Link>
+        <HeaderLinks />
+        <div className="theme_toggler">
+          <Theme />
+        </div>
+      </header>
     </>
   );
 };

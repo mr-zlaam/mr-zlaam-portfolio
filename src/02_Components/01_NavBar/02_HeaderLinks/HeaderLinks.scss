@@ -1,0 +1,11 @@
+@import "../../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+.navLinks_container {
+  nav {
+    .routes {
+      margin: 0 2rem;
+      a {
+        font-size: $font_md_1;
+      }
+    }
+  }
+}

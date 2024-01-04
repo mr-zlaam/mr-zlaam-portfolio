@@ -1,0 +1,17 @@
+@import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+
+.toggler_icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon_sun {
+    color: $white_color;
+  }
+  &:hover {
+    background: #0000004d;
+    cursor: pointer;
+  }
+}
