@@ -1,0 +1,39 @@
+@import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+
+.contact_container {
+  height: 70vh;
+  & .term_navigator {
+    display: block;
+    margin: auto;
+    text-align: center;
+    cursor: $pointer, default;
+    background: #00000072;
+    padding: 1.2rem;
+    font-family: $font_semi;
+    & a {
+      color: $white_color;
+    }
+  }
+  .parent_contact_wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    & .contact_wrapper {
+      padding: 2rem;
+      width: fit-content;
+      margin: auto;
+      height: fit-content;
+      & .icon_control {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 4rem 0;
+        & a {
+          margin: 2rem;
+          font-size: $font_lg_1;
+          font-family: $font_semi;
+        }
+      }
+    }
+  }
+}

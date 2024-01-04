@@ -21,7 +21,7 @@ const HeaderLinks = () => {
         <span onClick={menu_closer} className="cta routes">
           <Link
             to={"/"}
-            className={`${
+            className={`terms_navigator ${
               isDarkMode ? "link_animation_light " : "link_animation_dark "
             }`}
             style={isDarkMode ? { color: "white" } : { color: "#28282b" }}

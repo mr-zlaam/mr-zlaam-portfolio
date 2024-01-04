@@ -1,0 +1,73 @@
+@import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+.terms_parent_container {
+  height: 86.8vh;
+  position: relative;
+}
+.trms_conditons {
+  height: 5vh;
+  width: fit-content;
+  margin: auto;
+  font-size: 1.8rem;
+  font-family: $font_regular;
+  letter-spacing: 3px;
+}
+.terms_content_controller {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.div_1 {
+  flex: 1;
+  padding: 30px;
+}
+.div_2 {
+  flex: 0;
+}
+.header_txt {
+  font-family: $font_regular;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  text-align: justify;
+}
+.dark_green {
+  font-size: $font_sm_5;
+  font-family: $font_regular;
+  letter-spacing: 2px;
+}
+.header_txt > span {
+  font-size: 2rem;
+  font-family: $font_regular;
+  font-style: italic;
+}
+.bolder {
+  font-family: $font_regular;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-style: italic;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+.regular {
+  font-size: 1.5rem;
+  font-family: $font_regular;
+  text-align: start;
+  letter-spacing: 2px;
+  margin: 15px 0;
+}
+.txt_blue {
+  color: #43a4f8;
+}
+.txt_blue:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 468px) {
+  .regular {
+    font-size: 1rem;
+  }
+  .header_txt {
+    font-size: 1.1rem;
+  }
+}
