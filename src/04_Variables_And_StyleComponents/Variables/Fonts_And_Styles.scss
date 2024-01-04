@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 $pointer: url("/cursor_svg/pointer.svg");
 $default: url("/cursor_svg/cursor.svg");
 
@@ -29,7 +30,7 @@ $font_regular: Acorn_Regular;
 $font_md: "Acorn_Md";
 $font_semi: "Acorn_Semi";
 $font_bold: "Acorn_Bold";
-
+$font_handwriting: "Fugaz One", cursive;
 //FONTS SIZES
 
 // Small Font Size
@@ -204,3 +205,4 @@ html {
 .cta:hover .link_animation_light:after {
   @include link_animation_common_1;
 }
+// Card
