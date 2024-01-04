@@ -20,15 +20,12 @@ const Theme = () => {
   return (
     <>
       {isDarkMode ? (
-        <div className="toggler_icon">
-          <BsSunFill onClick={toggleThemeMode} className="icon_sun default " />
+        <div className="toggler_icon" onClick={toggleThemeMode}>
+          <BsSunFill className="icon_sun default " />
         </div>
       ) : (
-        <div className="toggler_icon">
-          <BsFillMoonFill
-            onClick={toggleThemeMode}
-            className="icon_moon default "
-          />
+        <div className="toggler_icon" onClick={toggleThemeMode}>
+          <BsFillMoonFill className="icon_moon default " />
         </div>
       )}
     </>

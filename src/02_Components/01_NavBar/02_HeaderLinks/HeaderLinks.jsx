@@ -10,6 +10,7 @@ const HeaderLinks = () => {
         <nav className={`${isDarkMode ? "white_color" : "black_color"}`}>
           <span className="cta routes">
             <Link
+              to={"/"}
               className={`${
                 isDarkMode ? "link_animation_light " : "link_animation_dark "
               }`}
@@ -20,6 +21,7 @@ const HeaderLinks = () => {
           </span>
           <span className="cta routes">
             <Link
+              to={"/expertise"}
               className={`${
                 isDarkMode ? "link_animation_light " : "link_animation_dark "
               }`}
@@ -30,6 +32,7 @@ const HeaderLinks = () => {
           </span>
           <span className="cta routes">
             <Link
+              to={"work"}
               className={`${
                 isDarkMode ? "link_animation_light " : "link_animation_dark "
               }`}
@@ -40,6 +43,7 @@ const HeaderLinks = () => {
           </span>
           <span className="cta routes">
             <Link
+              to={"/contact"}
               className={`${
                 isDarkMode ? "link_animation_light " : "link_animation_dark "
               }`}

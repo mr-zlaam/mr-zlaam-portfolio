@@ -17,66 +17,6 @@ const Parents = () => {
         >
           <Header />
           <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
-          <Routers />
         </div>
       </div>
     </>

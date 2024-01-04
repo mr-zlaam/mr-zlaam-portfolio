@@ -10,7 +10,7 @@ const Header = () => {
     <>
       <header className={`nav_container `}>
         <Link className="logo">
-          <img src="/logo/siraj.png" alt="logo" width={60} />
+          <img src="/logo/siraj.png" alt="logo" width={70} />
         </Link>
         <HeaderLinks />
         <div className="theme_toggler">
