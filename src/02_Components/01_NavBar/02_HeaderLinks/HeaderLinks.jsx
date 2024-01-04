@@ -18,18 +18,18 @@ const HeaderLinks = () => {
             
           `}
       >
-        <span className="cta routes">
+        <span onClick={menu_closer} className="cta routes">
           <Link
             to={"/"}
             className={`${
               isDarkMode ? "link_animation_light " : "link_animation_dark "
             }`}
-            style={isDarkMode ? { color: "white" } : { color: "#000" }}
+            style={isDarkMode ? { color: "white" } : { color: "#28282b" }}
           >
             Home
           </Link>
         </span>
-        <span className="cta routes">
+        <span onClick={menu_closer} className="cta routes">
           <Link
             to={"/expertise"}
             className={`${
@@ -40,7 +40,7 @@ const HeaderLinks = () => {
             Expertise
           </Link>
         </span>
-        <span className="cta routes">
+        <span onClick={menu_closer} className="cta routes">
           <Link
             to={"work"}
             className={`${
@@ -51,7 +51,7 @@ const HeaderLinks = () => {
             Work
           </Link>
         </span>
-        <span className="cta routes">
+        <span onClick={menu_closer} className="cta routes">
           <Link
             to={"/contact"}
             className={`${

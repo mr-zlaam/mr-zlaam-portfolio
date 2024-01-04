@@ -1,3 +1,12 @@
+$pointer: url("/cursor_svg/pointer.svg");
+$default: url("/cursor_svg/cursor.svg");
+
+.pointer {
+  cursor: $pointer;
+}
+.default {
+  cursor: $default;
+}
 @font-face {
   font-family: Acorn_Regular;
   src: url("../MyFonts/Acorn-Regular.otf");
@@ -103,7 +112,10 @@ $light_bg: linear-gradient(
   #55f7ab,
   #e7eed8
 );
+// cursor
+
 // Utility Classes
+
 *::selection {
   color: #5252529f;
 }

@@ -2,7 +2,7 @@
 
 .nav_container {
   font-family: $font_regular;
-  padding: 0rem 10rem;
+  padding: 1rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +14,7 @@
   .theme_toggler {
     position: absolute;
     top: 50%;
-    right: 1rem;
+    right: 3rem;
     transform: translate(-50%, -50%);
   }
   .menu_bar {
@@ -28,8 +28,14 @@
       display: inline;
       position: absolute;
       top: 35%;
-      right: 7rem;
+      right: 2rem;
       z-index: 21;
     }
+  }
+}
+@media screen and (max-width: 250px) {
+  * {
+    visibility: hidden;
+    background: $dark_bg;
   }
 }
