@@ -1,0 +1,32 @@
+@import "../Variables/Fonts_And_Styles.scss";
+
+.main_modal_container {
+  background: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 21;
+  .modal_closer {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    cursor: $pointer, pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #00000075;
+      transition: all 0.3s ease;
+    }
+    .modal_closer_icon {
+      color: $white_color;
+    }
+  }
+}

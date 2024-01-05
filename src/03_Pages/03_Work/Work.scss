@@ -1,0 +1,42 @@
+@import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+
+.main_work_container {
+  background: red;
+  width: 100%;
+  height: 100%;
+  & h1 {
+    font-family: $font_bold;
+    font-size: $font_xl_1;
+    background: blue;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .projects {
+    background: yellow;
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+@media screen and (max-width: 662px) {
+  .main_work_container {
+    & h1 {
+      font-size: $font_lg_1;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .main_work_container {
+    & h1 {
+      font-size: $font_lg_1;
+    }
+    .projects {
+      background: green;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+}
