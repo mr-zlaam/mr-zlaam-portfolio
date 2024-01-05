@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
 import { Context } from "../../01_Context/Context";
 import { MdEmail } from "react-icons/md";
-import { BsInstagram, BsMessenger } from "react-icons/bs";
+import { BsMessenger } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa6";
+import { IoLogoGithub } from "react-icons/io5";
+
 const Contact = () => {
   const { isDarkMode } = useContext(Context);
   return (
@@ -59,9 +62,9 @@ const Contact = () => {
                 </Link>
               </span>
             </div>
-            <div className="instagram icon_control">
+            <div className="linkedin icon_control">
               <span className="icon">
-                <BsInstagram className="icon" />
+                <FaLinkedin className="icon" />
               </span>
               <span className="cta">
                 <Link
@@ -71,9 +74,27 @@ const Contact = () => {
                       ? "link_animation_light white_color"
                       : "link_animation_dark black_color"
                   }`}
-                  to={"https://www.instagram.com/its_zlaam/"}
+                  to={"https://www.linkedin.com/in/mr-zalaam-29b944296/"}
                 >
-                  Instagram
+                  LinkedIn
+                </Link>
+              </span>
+            </div>
+            <div className="github icon_control">
+              <span className="icon">
+                <IoLogoGithub className="icon" />
+              </span>
+              <span className="cta">
+                <Link
+                  target="_blank"
+                  className={`${
+                    isDarkMode
+                      ? "link_animation_light white_color"
+                      : "link_animation_dark black_color"
+                  }`}
+                  to={"https://github.com/mr-zlaam"}
+                >
+                  Github
                 </Link>
               </span>
             </div>
