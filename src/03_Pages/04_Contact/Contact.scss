@@ -2,6 +2,8 @@
 
 .contact_container {
   height: 70vh;
+  animation: home ease-in-out backwards 1.5s;
+
   & .term_navigator {
     display: block;
     margin: auto;
@@ -28,10 +30,50 @@
         display: flex;
         align-items: center;
         margin: 4rem 0;
+        span > .icon {
+          font-size: $font_xl_4;
+        }
         & a {
           margin: 2rem;
           font-size: $font_lg_1;
           font-family: $font_semi;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 455px) {
+  .contact_container {
+    .parent_contact_wrapper {
+      & .contact_wrapper {
+        & .icon_control {
+          span > .icon {
+            font-size: $font_md_4;
+          }
+          & a {
+            margin: 2rem;
+            font-size: $font_sm_5;
+            font-family: $font_semi;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 321px) {
+  .contact_container {
+    .parent_contact_wrapper {
+      & .contact_wrapper {
+        & .icon_control {
+          span > .icon {
+            font-size: $font_sm_1;
+          }
+          & a {
+            margin: 2rem 1rem;
+            font-size: $font_sm_3;
+            font-family: $font_semi;
+            letter-spacing: 2px;
+          }
         }
       }
     }

@@ -25,7 +25,7 @@ const Contact = () => {
           <div className="contact_wrapper">
             <div className="email icon_control ">
               <span>
-                <MdEmail size={50} />
+                <MdEmail className="icon" />
               </span>
               <span className="cta">
                 <Link
@@ -43,7 +43,7 @@ const Contact = () => {
             </div>
             <div className="messenger icon_control">
               <span className="icon">
-                <BsMessenger size={50} />
+                <BsMessenger className="icon" />
               </span>
               <span className="cta">
                 <Link
@@ -61,7 +61,7 @@ const Contact = () => {
             </div>
             <div className="instagram icon_control">
               <span className="icon">
-                <BsInstagram size={50} />
+                <BsInstagram className="icon" />
               </span>
               <span className="cta">
                 <Link
