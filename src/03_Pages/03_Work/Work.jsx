@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./Work.scss";
-import data from "./Work.json";
+import project_data from "./Work.json";
 import Project_Modal from "../../04_Variables_And_StyleComponents/Project_Modal/Project_Modal";
 import { Context } from "../../01_Context/Context";
 import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
@@ -13,12 +13,12 @@ const Work = () => {
         <h1>My Latest Work</h1>
         <div className="projects_controller">
           <div className="projects">
-            {data &&
-              data.map((data) => {
+            {project_data &&
+              project_data.map((data) => {
                 return (
                   <div key={data.id}>
                     <Project_Card data={data} />
-                    {isModalOpen && <Project_Modal data={data} />}
+                    {isModalOpen && <Project_Modal />}
                   </div>
                 );
               })}
