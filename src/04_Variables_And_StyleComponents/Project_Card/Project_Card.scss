@@ -2,8 +2,8 @@
 
 .project_card {
   position: relative;
-  width: 95%;
-  height: fit-content;
+  width: 1fr;
+  height: 1fr;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -53,8 +53,8 @@
   border: 2px solid #bfbfff;
   position: relative;
   height: 40px;
-  border-radius: 50px;
   width: 120px;
+  border-radius: 50px;
   transition: all 0.3s ease;
   &:hover {
     background: #3636b4;

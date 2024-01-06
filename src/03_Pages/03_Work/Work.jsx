@@ -16,7 +16,7 @@ const Work = () => {
             {project_data &&
               project_data.map((data) => {
                 return (
-                  <div key={data.id}>
+                  <div className="projectsdata" key={data.id}>
                     <Project_Card data={data} />
                     {isModalOpen && <Project_Modal />}
                   </div>
