@@ -62,4 +62,26 @@
       letter-spacing: 2px;
     }
   }
+  .project_btn {
+    position: sticky;
+    bottom: 0;
+    background: #00000069;
+    display: block;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & a {
+      color: white;
+      font-family: $font_regular;
+      letter-spacing: 2px;
+      transition: all 0.5s ease-in-out;
+      text-decoration: none;
+      &:hover {
+        transform: scale(0.9);
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
 }

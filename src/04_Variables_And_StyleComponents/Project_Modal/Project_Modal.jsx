@@ -1,7 +1,10 @@
 import { useContext } from "react";
 import "./Project_Modal.scss";
+import { HiOutlineLink } from "react-icons/hi";
+
 import { FaArrowLeft } from "react-icons/fa6";
 import { Context } from "../../01_Context/Context";
+import { Link } from "react-router-dom";
 
 const Project_Modal = () => {
   const { isModalOpen, setIsModalOpen, isSelectedData, isDarkMode } =
@@ -27,6 +30,11 @@ const Project_Modal = () => {
           <h1 className="project_desc_txt">About Project:-</h1>
           <p className="project_desc">{isSelectedData.project_desc}</p>
         </div>
+        <span className="project_btn">
+          <Link to={isSelectedData.project_url} target="_blank">
+            Visit Project <HiOutlineLink />
+          </Link>
+        </span>
       </div>
     </>
   );
