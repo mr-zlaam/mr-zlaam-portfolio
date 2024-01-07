@@ -14,34 +14,32 @@
   .projects {
     display: grid;
     width: 100%;
-
-    grid-template-columns: repeat(auto-fill, minmax(350px, 35%));
-
+    height: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 50%));
     justify-content: center;
     & .projectsdata {
-      margin: 2rem;
+      margin: 0 2rem;
     }
   }
 }
-@media screen and (max-width: 702px) {
+@media screen and (max-width: 1000px) {
   .main_work_container {
     & h1 {
       font-size: $font_lg_1;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 85%));
+      grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
     }
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
   .main_work_container {
     & h1 {
       font-size: $font_lg_1;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 600px));
     }
   }
 }

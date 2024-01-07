@@ -12,8 +12,12 @@ const Project_Card = ({ data }) => {
   };
   return (
     <>
-      <div className={`project_card ${isDarkMode ? "dark_bg" : "light_bg"}`}>
-        <img src={image} alt="img" />
+      <div className={`project_card `}>
+        <img
+          src={image}
+          alt="img"
+          className={`${isDarkMode ? "dark_bg" : "light_bg"}`}
+        />
         <div className="project_content">
           <div onClick={handleModalOpen} className="btn_div">
             <span className="btn_txt">View Site</span>

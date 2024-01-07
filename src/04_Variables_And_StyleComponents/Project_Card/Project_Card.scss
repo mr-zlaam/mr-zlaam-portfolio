@@ -1,24 +1,22 @@
 @import "../Variables/Fonts_And_Styles.scss";
 
 .project_card {
+  max-height: 1fr;
+
   position: relative;
-  width: 1fr;
-  height: 1fr;
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 5px #000;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin: 1rem auto;
   & img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
     user-select: none;
     -webkit-user-drag: none;
+    object-fit: cover;
   }
 }
 .project_card:hover {
@@ -79,5 +77,18 @@
     position: absolute;
     top: 20%;
     right: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .project_card {
+    height: 320px;
+    & img {
+      min-width: 100%;
+      min-height: 100%;
+      user-select: none;
+      -webkit-user-drag: none;
+      object-fit: cover;
+    }
   }
 }
