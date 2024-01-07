@@ -23,14 +23,14 @@
     }
   }
 }
-@media screen and (max-width: 662px) {
+@media screen and (max-width: 702px) {
   .main_work_container {
     & h1 {
       font-size: $font_lg_1;
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(1fr, 100%));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 85%));
     }
   }
 }
