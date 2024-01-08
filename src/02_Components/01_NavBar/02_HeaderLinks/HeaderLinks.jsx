@@ -24,7 +24,7 @@ const HeaderLinks = () => {
             className={`terms_navigator ${
               isDarkMode ? "link_animation_light " : "link_animation_dark "
             }`}
-            style={isDarkMode ? { color: "white" } : { color: "#28282b" }}
+            style={isDarkMode ? { color: "white" } : { color: "#000" }}
           >
             Home
           </Link>
