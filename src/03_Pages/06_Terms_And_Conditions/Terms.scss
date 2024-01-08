@@ -36,8 +36,13 @@
     .bolder {
       @include headings;
     }
-    .flexing > * {
+    .flexing > .regular {
       @include bodys;
+      & .drf {
+        color: #875af0;
+        letter-spacing: 2px;
+        font-size: $font_md_4;
+      }
     }
     .quote {
       font-family: $font_semi;

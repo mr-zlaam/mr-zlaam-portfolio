@@ -61,6 +61,12 @@ const Terms = () => {
               casinos ain{"'"}t my jam. Let{"'"}s keep this PG-13, yeah?
             </li>
             <li className="regular">
+              I can't Work with Django Template Engine. If you just want to
+              create backend using
+              <strong className="drf"> DRF (Django Rest-Framework) </strong>
+              then feel free to contact me.
+            </li>
+            <li className="regular">
               Respect the copyright: Don{"'"}t ask me to build your site on
               stolen content. Let{"'"}s keep it original and legal, or risk
               getting slapped by the copyright police.

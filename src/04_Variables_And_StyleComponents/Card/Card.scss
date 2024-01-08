@@ -26,8 +26,9 @@
   box-sizing: border-box;
   backdrop-filter: blur(5px);
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in;
   user-select: none;
+  background: #00000021;
 }
 
 .card:hover .card__content {
