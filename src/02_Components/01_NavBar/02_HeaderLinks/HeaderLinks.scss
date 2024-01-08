@@ -54,9 +54,8 @@ html {
     @include navbar_toggle;
     transform: translateX(-100%);
     transition: 0.3s linear;
-    transition-property: transform, opacity;
-    opacity: 0;
-    will-change: transform, opacity;
+    transition-property: transform;
+    will-change: transform;
   }
   .bg_dark {
     background: $dark_bg;
