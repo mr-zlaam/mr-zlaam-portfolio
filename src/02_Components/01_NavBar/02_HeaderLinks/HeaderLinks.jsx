@@ -2,7 +2,6 @@ import { useContext } from "react";
 import "./HeaderLinks.scss";
 import { Link } from "react-router-dom";
 import { Context } from "../../../01_Context/Context";
-import { motion } from "framer-motion";
 const HeaderLinks = () => {
   const { isDarkMode, isMenuOpen, setIsMenuOpen } = useContext(Context);
   const menu_closer = () => {
@@ -11,9 +10,7 @@ const HeaderLinks = () => {
   return (
     <>
       {isMenuOpen && <div className="nav_closer" onClick={menu_closer} />}
-      <motion.nav
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+      <nav
         className={` ${isMenuOpen ? "navbar_visible " : "navbar_invisible"}  ${
           isDarkMode ? "white_color  " : "black_color "
         }
@@ -65,7 +62,7 @@ const HeaderLinks = () => {
             Contact
           </Link>
         </span>
-      </motion.nav>
+      </nav>
     </>
   );
 };
