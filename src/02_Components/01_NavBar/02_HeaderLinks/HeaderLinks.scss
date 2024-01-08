@@ -46,12 +46,12 @@ html {
 
   .navbar_visible {
     @include navbar_toggle;
-    transition: all 0.3s linear;
+    transition: 0.3s linear;
   }
   .navbar_invisible {
     @include navbar_toggle;
     transform: translateX(-200%);
-    transition: all 0.3s linear;
+    transition: 0.3s linear;
   }
   .bg_dark {
     background: $dark_bg;
