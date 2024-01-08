@@ -2,7 +2,7 @@
   {
     "title": "Python",
     "image": "svgs/python.svg",
-    "content": "If Javascript wasn't there then it would be my favorite language, ofcourse it is also my first ever programming language."
+    "content": "If Javascript wasn't there, then it would be my favorite language; of course, it is also my first ever programming language."
   },
   {
     "title": "JavaScript",
@@ -12,17 +12,17 @@
   {
     "title": "Django",
     "image": "svgs/django.svg",
-    "content": "It is very handy, organized, and an advanced framework. I mostly prefer Django over other for e-commerce sites."
+    "content": "It is extremly handy, and organized, and Django is my preferred framework for e-commerce sites due to its advanced features and organization."
   },
   {
     "title": "React",
     "image": "svgs/react.svg",
-    "content": "The creation of Facebook is  amazing and very good choice for frontend stuff, ofcourse I am talking about react."
+    "content": "The creation of Facebook is  really excellent choice for writing frontend stuff; of course, I am talking about our all-time favorite library, React-js."
   },
   {
     "title": "MongoDB",
     "image": "svgs/mongo.svg",
-    "content": "MongoDB is My favorite database because of its syntax  which is similar to JS."
+    "content": "MongoDB is My favorite database because of its syntax and advanced features  which are similar to JavaScript."
   },
   {
     "title": "HTML",
@@ -32,12 +32,12 @@
   {
     "title": "CSS",
     "image": "svgs/scss.svg",
-    "content": "Recently I unlocked the super power of CSS called SASS/SCSS and it is just Amazing."
+    "content": "It's been a long time since I've unlocked the superpower of CSS, called SASS/SCSS, and it's just amazing."
   },
   {
     "title": "Tailwind",
     "image": "svgs/tailwind.svg",
-    "content": "A very beautiful framework for CSS. It increases my speed 2X during  styling."
+    "content": "A very beautiful micro-framework for writing fast styling. It boosts my speed 2X during styling."
   },
   {
     "title": "Redux Toolkit",

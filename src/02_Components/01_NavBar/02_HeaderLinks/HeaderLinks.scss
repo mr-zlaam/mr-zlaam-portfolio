@@ -5,6 +5,13 @@ nav {
     margin: 0 2rem;
     a {
       font-size: $font_md_1;
+      user-select: none;
+      transition: all 0.3s linear;
+      &:focus {
+        font-style: italic;
+        transition: all 0.3s linear;
+        font-weight: $font_bold;
+      }
     }
   }
 }

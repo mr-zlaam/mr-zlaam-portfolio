@@ -6,6 +6,7 @@
   cursor: $default, default;
   & a {
     cursor: $pointer, default;
+    user-select: none;
   }
 }
 .child_container_light {

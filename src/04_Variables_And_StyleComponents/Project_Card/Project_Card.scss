@@ -2,7 +2,7 @@
 
 .project_card {
   max-height: 1fr;
-
+  border-radius: 10px;
   position: relative;
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
   background: #00000090;
   backdrop-filter: blur(2px);
   transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.05);
   display: flex;
   justify-content: center;
   align-items: center;

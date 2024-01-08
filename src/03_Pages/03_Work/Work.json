@@ -12,5 +12,12 @@
     "project_url": "https://zlaamgallery.netlify.app",
     "project_title": "DreamBuilders",
     "project_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolores? Saepe quia explicabo asperiores delectus ex veritatis impedit pariatur a mollitia "
+  },
+  {
+    "id": 3,
+    "image": "/gallery.png",
+    "project_url": "https://zlaamgallery.netlify.app",
+    "project_title": "DreamBuilders",
+    "project_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolores? Saepe quia explicabo asperiores delectus ex veritatis impedit pariatur a mollitia "
   }
 ]

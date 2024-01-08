@@ -11,6 +11,7 @@
   height: 80px;
   z-index: 20;
   backdrop-filter: blur(3px);
+  user-select: none;
   .logo {
     position: relative;
     top: 0.7rem;

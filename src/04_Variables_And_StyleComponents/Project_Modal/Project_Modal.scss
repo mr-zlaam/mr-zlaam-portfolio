@@ -9,6 +9,7 @@
   transform: translate(-50%, -50%);
   overflow: auto;
   z-index: 21;
+
   .modal_closer {
     position: sticky;
     top: 2rem;
@@ -65,9 +66,10 @@
   .project_btn {
     position: sticky;
     bottom: 0;
-    background: #00000069;
+    left: 0;
+    background: #000000a9;
     display: block;
-    height: 70px;
+    height: 50px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -76,12 +78,22 @@
       color: white;
       font-family: $font_regular;
       letter-spacing: 2px;
-      transition: all 0.5s ease-in-out;
+      transition: all 0.3s ease-in-out;
       text-decoration: none;
       &:hover {
         transform: scale(0.9);
         transition: all 0.5s ease-in-out;
       }
     }
+  }
+  animation: modal_animation ease-in-out backwards 0.7s;
+}
+
+@keyframes modal_animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

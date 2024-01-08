@@ -30,7 +30,7 @@ const Expertise = () => {
             <span>{date}-</span>
             <span>{month}-</span>
             <span>{year}</span>
-            <div className="avail">AVIALABLE FOR COLLABORATE</div>
+            <div className="avail">AVAILABLE FOR COLLABORATION</div>
           </div>
         </div>
         <div className="expertise_about">

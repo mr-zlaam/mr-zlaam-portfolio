@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./Project_Modal.scss";
-import { HiOutlineLink } from "react-icons/hi";
+import { TbExternalLink } from "react-icons/tb";
 
 import { FaArrowLeft } from "react-icons/fa6";
 import { Context } from "../../01_Context/Context";
@@ -32,7 +32,7 @@ const Project_Modal = () => {
         </div>
         <span className="project_btn">
           <Link to={isSelectedData.project_url} target="_blank">
-            Visit Project <HiOutlineLink />
+            Visit Project <TbExternalLink />
           </Link>
         </span>
       </div>
