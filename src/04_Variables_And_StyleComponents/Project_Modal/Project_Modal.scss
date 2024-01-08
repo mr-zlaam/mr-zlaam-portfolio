@@ -21,10 +21,12 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
+    transition-property: background, color;
     &:hover {
       background-color: #00000075;
-      transition: all 0.3s ease;
+      transition: 0.3s ease;
+      transition-property: background, color;
       color: #fff;
     }
   }
@@ -78,11 +80,13 @@
       color: white;
       font-family: $font_regular;
       letter-spacing: 2px;
-      transition: all 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      transition-property: transform;
       text-decoration: none;
       &:hover {
         transform: scale(0.9);
-        transition: all 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        transition-property: transform;
       }
     }
   }
