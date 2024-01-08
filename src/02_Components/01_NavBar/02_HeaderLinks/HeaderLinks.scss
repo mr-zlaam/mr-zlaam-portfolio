@@ -47,15 +47,16 @@ html {
   .navbar_visible {
     @include navbar_toggle;
     transition: 0.3s linear;
-    transition-property: transform;
-    will-change: transform;
+    transition-property: transform, opacity;
+    will-change: transform, opacity;
   }
   .navbar_invisible {
     @include navbar_toggle;
     transform: translateX(-100%);
     transition: 0.3s linear;
-    transition-property: transform;
-    will-change: transform;
+    transition-property: transform, opacity;
+    opacity: 0;
+    will-change: transform, opacity;
   }
   .bg_dark {
     background: $dark_bg;
