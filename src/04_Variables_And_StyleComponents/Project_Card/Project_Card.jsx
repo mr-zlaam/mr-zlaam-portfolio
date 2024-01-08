@@ -15,7 +15,7 @@ const Project_Card = ({ data }) => {
       <div className={`project_card `}>
         <img
           src={image}
-          alt="img"
+          alt={data.project_title}
           className={`${isDarkMode ? "dark_bg" : "light_bg"}`}
         />
         <div className="project_content">
