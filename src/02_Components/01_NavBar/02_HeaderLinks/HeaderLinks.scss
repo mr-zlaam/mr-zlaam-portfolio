@@ -52,7 +52,7 @@ html {
   }
   .navbar_invisible {
     @include navbar_toggle;
-    transform: translateX(-200%);
+    transform: translateX(-100%);
     transition: 0.3s linear;
     transition-property: transform;
     will-change: transform;
