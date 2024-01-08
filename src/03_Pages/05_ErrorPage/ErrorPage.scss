@@ -1,9 +1,9 @@
 @import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
 
 .error_control_main {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 20px);
   animation: home ease-in-out backwards 1.5s;
-
+  overflow: auto;
   display: flex;
   align-items: center;
   justify-content: center;
