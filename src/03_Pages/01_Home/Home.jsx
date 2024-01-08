@@ -1,7 +1,14 @@
-import {} from "react";
+import { useContext, useEffect } from "react";
 
 import "./Home.scss";
+import { Context } from "../../01_Context/Context";
 const Home = () => {
+  const { setIsErrorPage } = useContext(Context);
+  let pageName = "Home";
+  useEffect(() => {
+    setIsErrorPage(false);
+    document.title = `Zlaam | ${pageName}`;
+  }, [pageName]);
   return (
     <>
       <div className="home_parent">

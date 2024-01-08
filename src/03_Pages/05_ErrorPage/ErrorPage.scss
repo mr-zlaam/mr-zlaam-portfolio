@@ -1,0 +1,35 @@
+@import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
+
+.error_control_main {
+  height: calc(100vh - 200px);
+  animation: home ease-in-out backwards 1.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .error_control {
+    & > span {
+      font-family: $font_handwriting;
+      font-size: $font_xl_5;
+      margin: 1rem;
+    }
+  }
+  & .homeNavigate {
+    font-family: $font_handwriting;
+    text-align: center;
+    display: block;
+    margin: 4rem 0;
+    & > a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      & > span {
+        font-size: $font_lg_1;
+        margin: 0 1rem;
+        font-weight: 100;
+      }
+    }
+  }
+}

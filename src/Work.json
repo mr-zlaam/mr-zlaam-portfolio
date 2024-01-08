@@ -1,22 +1,15 @@
 [
   {
     "id": 1,
-    "image": "/gallery.png",
+    "image": "/projects/zlaamgallery.webp",
     "project_url": "https://zlaamgallery.netlify.app",
     "project_title": "Image Gallery",
     "project_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolores? Saepe quia explicabo asperiores delectus ex veritatis impedit pariatur a mollitia "
   },
   {
     "id": 2,
-    "image": "/gallery.png",
-    "project_url": "https://zlaamgallery.netlify.app",
-    "project_title": "DreamBuilders",
-    "project_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolores? Saepe quia explicabo asperiores delectus ex veritatis impedit pariatur a mollitia "
-  },
-  {
-    "id": 3,
-    "image": "/gallery.png",
-    "project_url": "https://zlaamgallery.netlify.app",
+    "image": "/projects/dreambuilders.webp",
+    "project_url": "https://dreambuilderss.netlify.app",
     "project_title": "DreamBuilders",
     "project_desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolores? Saepe quia explicabo asperiores delectus ex veritatis impedit pariatur a mollitia "
   }

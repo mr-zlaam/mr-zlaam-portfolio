@@ -1,11 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./Terms.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Context } from "../../01_Context/Context";
 const Terms = () => {
   const { isDarkMode } = useContext(Context);
+  let pageName = "Terms & Conditions";
+  useEffect(() => {
+    document.title = `Zlaam | ${pageName}`;
+    return () => {
+      // code to run on component unmount
+    };
+  }, [pageName]);
   return (
     <>
       <motion.div

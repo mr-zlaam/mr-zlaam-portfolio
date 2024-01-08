@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./Contact.scss";
 import { Link } from "react-router-dom";
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
@@ -9,6 +9,13 @@ import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoGithub } from "react-icons/io5";
 
 const Contact = () => {
+  let pageName = "Contact";
+  useEffect(() => {
+    document.title = `Zlaam | ${pageName}`;
+    return () => {
+      // code to run on component unmount
+    };
+  }, [pageName]);
   const { isDarkMode } = useContext(Context);
   return (
     <>

@@ -4,7 +4,8 @@ import Header from "../02_Components/01_NavBar/01_Header/Header";
 import "./Parents.scss";
 import { Context } from "../01_Context/Context";
 const Parents = () => {
-  const { isDarkMode } = useContext(Context);
+  const { isDarkMode, isErrorPage } = useContext(Context);
+
   return (
     <>
       <div>
@@ -15,8 +16,7 @@ const Parents = () => {
               : "child_container_light  black_color"
           }`}
         >
-          <Header />
-          <Routers />
+          {isErrorPage ? null : <Header />} <Routers />
         </div>
       </div>
     </>

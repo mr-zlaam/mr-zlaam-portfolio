@@ -6,6 +6,7 @@ export const ContextProvider = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedData, setIsSelectedData] = useState(null);
+  const [isErrorPage, setIsErrorPage] = useState(false);
   return (
     <Context.Provider
       value={{
@@ -17,6 +18,8 @@ export const ContextProvider = ({ children }) => {
         setIsModalOpen,
         isSelectedData,
         setIsSelectedData,
+        isErrorPage,
+        setIsErrorPage,
       }}
     >
       {children}

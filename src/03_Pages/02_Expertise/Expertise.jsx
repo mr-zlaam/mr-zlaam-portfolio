@@ -2,7 +2,15 @@ import "./Expertise.scss";
 import data from "../../About.json";
 
 import Card from "../../04_Variables_And_StyleComponents/Card/Card.jsx";
+import { useEffect } from "react";
 const Expertise = () => {
+  let pageName = "Expertise";
+  useEffect(() => {
+    document.title = `Zlaam | ${pageName}`;
+    return () => {
+      // code to run on component unmount
+    };
+  }, [pageName]);
   const date = new Date().getDate();
   const month = new Date().getMonth();
   const year = new Date().getFullYear();
