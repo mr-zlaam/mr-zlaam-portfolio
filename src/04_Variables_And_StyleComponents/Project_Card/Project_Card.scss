@@ -3,6 +3,8 @@
 .project_card {
   max-height: 1fr;
   border-radius: 10px;
+  min-height: 100%;
+  max-height: 100%;
   position: relative;
   display: flex;
   align-items: center;
