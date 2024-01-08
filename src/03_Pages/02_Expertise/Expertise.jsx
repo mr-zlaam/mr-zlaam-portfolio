@@ -1,10 +1,8 @@
-// import { useContext } from "react";
 import "./Expertise.scss";
-import data from "./about.json";
-// import { Context } from "../../01_Context/Context.jsx";
+import data from "../../About.json";
+
 import Card from "../../04_Variables_And_StyleComponents/Card/Card.jsx";
 const Expertise = () => {
-  // const { isDarkMode } = useContext(Context);
   const date = new Date().getDate();
   const month = new Date().getMonth();
   const year = new Date().getFullYear();

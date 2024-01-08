@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
-$pointer: url("/cursor_svg/pointer.svg");
-$default: url("/cursor_svg/cursor.svg");
 
-.pointer {
-  cursor: $pointer;
-}
-.default {
-  cursor: $default;
-}
 @font-face {
   font-family: Acorn_Regular;
   src: url("../MyFonts/Acorn-Regular.otf");
@@ -114,7 +106,15 @@ $light_bg: linear-gradient(
   #e7eed8
 );
 // cursor
+$pointer: url("/cursor_svg/pointer.svg");
+$default: url("/cursor_svg/cursor.svg");
 
+.pointer {
+  cursor: $pointer;
+}
+.default {
+  cursor: $default;
+}
 // Utility Classes
 
 *::selection {
