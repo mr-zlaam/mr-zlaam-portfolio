@@ -75,7 +75,7 @@ html {
     @include width;
   }
 }
-@media screen and (max-width: 1000px) and (max-height: 250px) {
+@media screen and (max-width: 1000px) and (max-height: 450px) {
   @mixin navbar_toggler {
     flex-direction: row;
     width: 100%;

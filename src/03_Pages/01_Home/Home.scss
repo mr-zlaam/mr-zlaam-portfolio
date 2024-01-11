@@ -62,16 +62,18 @@
   }
 }
 @media screen and (max-width: 583px) {
+  .home_parent {
+    width: 100%;
+    position: fixed;
+  }
   .home_parent > .home_container > .home_content > .home_about {
     font-size: $font_xl_4;
     text-align: center;
     width: 100%;
   }
-  .home_parent > .home_container > .home_content > .about_img_container {
-    max-width: 320px;
-  }
 }
-
+@media screen and (max-width: 324px) and (max-height: 700px) {
+}
 @media screen and (max-width: 291px) {
   .home_parent > .home_container > .home_content > .home_about {
     font-size: $font_xl-1;
