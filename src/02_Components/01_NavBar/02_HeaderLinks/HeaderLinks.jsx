@@ -21,10 +21,11 @@ const HeaderLinks = () => {
         <span onClick={menu_closer} className="cta routes">
           <Link
             to={"/"}
-            className={`terms_navigator ${
-              isDarkMode ? "link_animation_light " : "link_animation_dark "
+            className={`${
+              isDarkMode
+                ? "link_animation_light white_color"
+                : "link_animation_dark black_color "
             }`}
-            style={isDarkMode ? { color: "white" } : { color: "#000" }}
           >
             Home
           </Link>
@@ -33,9 +34,10 @@ const HeaderLinks = () => {
           <Link
             to={"/expertise"}
             className={`${
-              isDarkMode ? "link_animation_light " : "link_animation_dark "
+              isDarkMode
+                ? "link_animation_light white_color"
+                : "link_animation_dark black_color "
             }`}
-            style={isDarkMode ? { color: "white" } : { color: "#000" }}
           >
             Expertise
           </Link>
@@ -44,9 +46,10 @@ const HeaderLinks = () => {
           <Link
             to={"work"}
             className={`${
-              isDarkMode ? "link_animation_light " : "link_animation_dark "
+              isDarkMode
+                ? "link_animation_light white_color"
+                : "link_animation_dark black_color "
             }`}
-            style={isDarkMode ? { color: "white" } : { color: "#000" }}
           >
             Work
           </Link>
@@ -55,9 +58,10 @@ const HeaderLinks = () => {
           <Link
             to={"/contact"}
             className={`${
-              isDarkMode ? "link_animation_light " : "link_animation_dark "
+              isDarkMode
+                ? "link_animation_light white_color"
+                : "link_animation_dark black_color "
             }`}
-            style={isDarkMode ? { color: "white" } : { color: "#000" }}
           >
             Contact
           </Link>

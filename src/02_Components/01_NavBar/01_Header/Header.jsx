@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <header className={`nav_container`}>
         <Link to={"/"} className="logo">
-          <img src="/logo/zlaam.png" alt="logo" width={75} />
+          <img src="/logo/zlaam.png" alt="logo" />
         </Link>
         <HeaderLinks />
         <div className={`menu_bar`}>

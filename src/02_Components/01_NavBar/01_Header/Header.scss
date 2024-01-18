@@ -15,6 +15,9 @@
   .logo {
     position: relative;
     top: 0.7rem;
+    & img {
+      width: 75px;
+    }
   }
   .theme_toggler {
     position: absolute;
