@@ -9,9 +9,12 @@ const Expertise = () => {
     document.title = `Zlaam | ${pageName}`;
     window.scrollTo(0, 0);
   }, [pageName]);
+  const today = new Date();
+  const monthName = today.toLocaleString("en-US", { month: "short" });
   const date = new Date().getDate();
-  const month = new Date().getMonth();
+  const month = monthName;
   const year = new Date().getFullYear();
+  const full_data = `${date}- ${month}- ${year}`;
   return (
     <>
       <div className="main_about_container">
@@ -31,9 +34,7 @@ const Expertise = () => {
         </div>
         <div className="date_about">
           <div className="date_wrapper">
-            <span>{date}-</span>
-            <span>{month}-</span>
-            <span>{year}</span>
+            <span>{full_data}</span>
             <div className="avail">AVAILABLE FOR COLLABORATION</div>
           </div>
         </div>
