@@ -29,6 +29,7 @@
       font-family: $font_regular;
       font-size: $font_sm_5;
       letter-spacing: 2px;
+      line-height: 1.8;
       & strong {
         @include headings;
       }
