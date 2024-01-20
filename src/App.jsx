@@ -1,5 +1,4 @@
-import Parents from "./00_Parents/Parent";
-import Cursor from "./02_Components/Cursor/Cursor";
+import { Cursor, Parents } from "./05_Exporter.js";
 
 function App() {
   return (

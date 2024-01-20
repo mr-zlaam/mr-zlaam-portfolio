@@ -1,14 +1,13 @@
 import "./Expertise.scss";
 import data from "../../About.json";
-
-import Card from "../../04_Variables_And_StyleComponents/Card/Card.jsx";
+import { Card } from "../../05_Exporter.js";
 import { useEffect } from "react";
 const Expertise = () => {
   let pageName = "Expertise";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
     window.scrollTo(0, 0);
-  }, [pageName]);
+  }, []);
   const today = new Date();
   const monthName = today.toLocaleString("en-US", { month: "short" });
   const date = new Date().getDate();

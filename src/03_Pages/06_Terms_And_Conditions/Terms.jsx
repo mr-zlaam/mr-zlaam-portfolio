@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import "./Terms.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Context } from "../../01_Context/Context";
+import { Context } from "../../05_Exporter.js";
 const Terms = () => {
   const { isDarkMode } = useContext(Context);
   let pageName = "Terms & Conditions";

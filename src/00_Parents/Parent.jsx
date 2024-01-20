@@ -1,8 +1,7 @@
 import { useContext } from "react";
-import Routers from "../02_Components/02_Routers/01_Routers";
-import Header from "../02_Components/01_NavBar/01_Header/Header";
 import "./Parents.scss";
 import { Context } from "../01_Context/Context";
+import { Header, Routers } from "../05_Exporter.js";
 const Parents = () => {
   const { isDarkMode, isErrorPage } = useContext(Context);
 

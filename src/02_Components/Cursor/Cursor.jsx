@@ -11,7 +11,7 @@ function Cursor() {
 
       const newX = e.clientX;
       const newY = e.clientY;
-      const easingFactor = 0.09; // Adjust this value for slower/faster movement
+      const easingFactor = 0.04; // Adjust this value for slower/faster movement
 
       const updatePosition = () => {
         setPosition((prevPosition) => ({

@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import "./Contact.scss";
 import { Link } from "react-router-dom";
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
-import { Context } from "../../01_Context/Context";
+import { Context } from "../../05_Exporter.js";
 import { MdEmail } from "react-icons/md";
 import { BsMessenger } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";

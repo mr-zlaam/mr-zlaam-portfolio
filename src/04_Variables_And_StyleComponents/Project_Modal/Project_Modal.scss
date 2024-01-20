@@ -53,9 +53,14 @@
 
     & .project_title {
       letter-spacing: 2px;
+      font-family: $font_md;
+      text-align: center;
+      font-size: $font_xl_1;
     }
     & .project_desc_txt {
       font-size: $font_md_3;
+      font-family: $font_md;
+
       text-align: start;
       letter-spacing: 2px;
       width: 100%;
