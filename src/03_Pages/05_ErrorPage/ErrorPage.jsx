@@ -8,6 +8,8 @@ const ErrorPage = () => {
   const { setIsErrorPage } = useContext(Context);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     const Error_toggler = () => {
       setIsErrorPage(true);
     };

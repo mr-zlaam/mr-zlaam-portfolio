@@ -7,6 +7,7 @@ const Expertise = () => {
   let pageName = "Expertise";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
+    window.scrollTo(0, 0);
   }, [pageName]);
   const date = new Date().getDate();
   const month = new Date().getMonth();

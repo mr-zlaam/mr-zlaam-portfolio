@@ -25,6 +25,6 @@
     "image": "/projects/Reminders.webp",
     "project_url": "https://oldreminders.netlify.app/",
     "project_title": "Reminders",
-    "project_desc": "Hello there! Currently, you're watching a Todo app that has authentication. In order to create any todo, you have to login first. You can create, edit, and delete your todos. Don't worry, your Todo won't be removed automatically unless you remove it manually. I've used React on the frontend and Firebase on the backend.One important thing is that if you just want to test the app, you don't have to create an account for it. The login information is already provided in the project image above."
+    "project_desc": "Hello there! Currently, you're watching a Todo app that has authentication. In order to create todos, you have to login first. You can create, edit, and delete your todos. Don't worry, your Todo won't be removed automatically unless you remove it manually. I've used React on the frontend and Firebase on the backend.One important thing is that if you just want to test the app, you don't have to create an account for it. The login information is already provided in the project image above."
   }
 ]

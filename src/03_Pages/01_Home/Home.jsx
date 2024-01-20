@@ -8,6 +8,7 @@ const Home = () => {
   useEffect(() => {
     setIsErrorPage(false);
     document.title = `Zlaam | ${pageName}`;
+    window.scrollTo(0, 0);
   }, [pageName]);
   return (
     <>

@@ -11,10 +11,8 @@ import { IoLogoGithub } from "react-icons/io5";
 const Contact = () => {
   let pageName = "Contact";
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = `Zlaam | ${pageName}`;
-    return () => {
-      // code to run on component unmount
-    };
   }, [pageName]);
   const { isDarkMode } = useContext(Context);
   return (

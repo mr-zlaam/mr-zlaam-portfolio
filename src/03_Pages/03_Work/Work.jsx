@@ -10,10 +10,8 @@ const Work = () => {
   const { isModalOpen, isDarkMode } = useContext(Context);
   let pageName = "Work";
   useEffect(() => {
+    window.scrollTo(0, 0);
     document.title = `Zlaam | ${pageName}`;
-    return () => {
-      // code to run on component unmount
-    };
   }, [pageName]);
   const LinkClass = `${
     isDarkMode

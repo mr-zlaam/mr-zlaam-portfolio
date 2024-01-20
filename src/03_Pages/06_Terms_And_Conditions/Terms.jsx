@@ -9,6 +9,7 @@ const Terms = () => {
   let pageName = "Terms & Conditions";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
+    window.scrollTo(0, 0);
   }, [pageName]);
   const hero = `${
     isDarkMode ? "link_animation_light " : "link_animation_dark "
