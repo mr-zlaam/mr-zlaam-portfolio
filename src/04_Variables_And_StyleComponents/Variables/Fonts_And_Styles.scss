@@ -137,6 +137,9 @@ $default: url("/cursor_svg/cursor.svg");
 .dark_bg {
   background: $dark_bg;
 }
+a {
+  text-decoration: none;
+}
 
 //Global size
 html {

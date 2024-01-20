@@ -12,5 +12,19 @@
     "project_url": "https://dreambuilderss.netlify.app",
     "project_title": "DreamBuilders",
     "project_desc": "Recently, I've visited a construction company named Dream Builders, and then I've realized that they really need a portfolio for their awesome business, so I made one for them. Although most of its parts are static, it's still good. If you ever want them to construct a building for you, then you can contact them for that. I am sure you will never regret it."
+  },
+  {
+    "id": 3,
+    "image": "/projects/animequiz.webp",
+    "project_url": "https://animequizler.netlify.app/",
+    "project_title": "Anime Quizler",
+    "project_desc": "As an avid anime lover, I built this quiz anime web app to keep myself entertained. But I've retrieved all of the information using a Restful API. This app is similar to an exam in that it has multiple-choice questions from which you must pick one of four. Finally, you will be given the results, which will tell you how many questions you were able to answer. "
+  },
+  {
+    "id": 4,
+    "image": "/projects/Reminders.webp",
+    "project_url": "https://oldreminders.netlify.app/",
+    "project_title": "Reminders",
+    "project_desc": "Hello there! Currently, you're watching a Todo app that has authentication. In order to create any todo, you have to login first. You can create, edit, and delete your todos. Don't worry, your Todo won't be removed automatically unless you remove it manually. I've used React on the frontend and Firebase on the backend.One important thing is that if you just want to test the app, you don't have to create an account for it. The login information is already provided in the project image above."
   }
 ]

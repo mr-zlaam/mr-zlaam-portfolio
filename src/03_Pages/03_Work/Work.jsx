@@ -6,7 +6,6 @@ import { Context } from "../../01_Context/Context";
 import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
 import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
-
 const Work = () => {
   const { isModalOpen, isDarkMode } = useContext(Context);
   let pageName = "Work";
@@ -16,7 +15,7 @@ const Work = () => {
       // code to run on component unmount
     };
   }, [pageName]);
-  const ResumeClass = `${
+  const LinkClass = `${
     isDarkMode
       ? "link_animation_light white_color"
       : "link_animation_dark black_color"
@@ -28,7 +27,7 @@ const Work = () => {
         <div className="projects_controller">
           <span className="cta resume_container">
             <HiDownload />
-            <Link className={ResumeClass}>Resume</Link>
+            <Link className={LinkClass}>Resume</Link>
           </span>
           <div className="projects">
             {project_data &&
