@@ -1,1 +1,5 @@
 @import "../Variables/Fonts_And_Styles.scss";
+.menu,
+.clear {
+  cursor: $pointer, pointer;
+}

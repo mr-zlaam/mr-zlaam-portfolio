@@ -23,7 +23,7 @@ const Project_Modal = () => {
           <FaArrowLeft />
         </div>
         <div className="image_controller">
-          <img src={isSelectedData.image} alt="hello" />
+          <img src={isSelectedData.image} alt={isSelectedData.project_title} />
         </div>
         <div className="description_controller">
           <h1 className="project_title">{isSelectedData.project_title}</h1>

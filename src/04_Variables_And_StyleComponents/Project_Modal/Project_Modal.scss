@@ -9,6 +9,7 @@
   transform: translate(-50%, -50%);
   overflow: auto;
   z-index: 21;
+  animation: modal_animation ease-in-out backwards 1s;
 
   .modal_closer {
     position: sticky;
@@ -49,6 +50,7 @@
   & .description_controller {
     max-width: 1000px;
     margin: auto;
+
     & .project_title {
       letter-spacing: 2px;
     }
@@ -88,7 +90,6 @@
       }
     }
   }
-  animation: modal_animation ease-in-out backwards 0.7s;
 }
 
 @keyframes modal_animation {
