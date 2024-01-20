@@ -40,6 +40,9 @@
 }
 @media screen and (max-width: 768px) {
   .projects {
+    & h1 {
+      font-size: $font_md_5;
+    }
     .pointer {
       cursor: $default, default;
     }
