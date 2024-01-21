@@ -49,7 +49,7 @@ const Work = () => {
           infinite={true}
           showDots={true}
           removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
-          autoPlaySpeed={4000}
+          autoPlaySpeed={15000}
           autoPlay={true}
         >
           {project_data &&
