@@ -6,7 +6,7 @@ import { Context } from "../../05_Exporter.js";
 import { MdEmail } from "react-icons/md";
 import { BsMessenger } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
 
 const Contact = () => {
   let pageName = "Contact";
@@ -45,7 +45,7 @@ const Contact = () => {
                   }`}
                   to="mailto:mrzalaam@gmail.com"
                 >
-                  mrzalaam@gmail.com
+                  Email
                 </Link>
               </span>
             </div>
@@ -100,6 +100,24 @@ const Contact = () => {
                   to={"https://github.com/mr-zlaam"}
                 >
                   Github
+                </Link>
+              </span>
+            </div>
+            <div className="twitter icon_control">
+              <span className="icon">
+                <IoLogoTwitter className="icon" />
+              </span>
+              <span className="cta">
+                <Link
+                  target="_blank"
+                  className={`${
+                    isDarkMode
+                      ? "link_animation_light white_color"
+                      : "link_animation_dark black_color"
+                  }`}
+                  to={"https://twitter.com/mr_zlaam"}
+                >
+                  X(Twitter)
                 </Link>
               </span>
             </div>
