@@ -1,86 +1,78 @@
 @import "../Variables/Fonts_And_Styles.scss";
 
 .project_card {
-  max-height: 1fr;
   border-radius: 10px;
-  min-height: 100%;
-  max-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
   perspective: 1000px;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  margin: 2rem 1rem;
+  margin: 0.2rem 1rem;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #28282b;
-
+  box-shadow: 0px 0px 12px -3px rgba(40, 40, 43, 0.75);
+  -webkit-box-shadow: 0px 0px 12px -3px rgba(40, 40, 43, 0.75);
+  -moz-box-shadow: 0px 0px 12px -3px rgba(40, 40, 43, 0.75);
   & img {
     width: 100%;
     border-radius: 10px;
     height: 100%;
     user-select: none;
     -webkit-user-drag: none;
-    object-fit: cover;
+    object-fit: contain;
   }
-}
-.project_card:hover {
-  transform: scale(1.01);
-}
-
-.project_content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  transform: translate(-200%);
-  background: #00000090;
-  backdrop-filter: blur(3px);
-  transform-origin: bottom;
-  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.05);
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  align-items: center;
-}
-
-.project_card:hover .project_content {
-  transform: translate(0);
-}
-.btn_div {
-  font-family: $font_handwriting;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px solid #bfbfff;
-  position: relative;
-  height: 40px;
-  width: 120px;
-  border-radius: 50px;
-  transition: 0.3s ease;
-  transition-property: background, border;
-  &:hover {
-    background: #3636b4;
-    cursor: $pointer, default;
-    border-color: transparent;
-  }
-  & .btn_txt {
-    font-weight: 100;
-    font-size: $font_sm_3;
-    height: fit-content;
-    width: fit-content;
-    margin-right: 20px;
-    text-decoration: none;
-    color: $white_color;
-    user-select: none;
-  }
-  & .btn_icon {
-    color: $white_color;
+  .project_content {
     position: absolute;
-    top: 20%;
-    right: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translate(-100%);
+    background: #00000090;
+    backdrop-filter: blur(3px);
+    transform-origin: right;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.05);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    .btn_div {
+      font-family: $font_handwriting;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 2px solid #bfbfff;
+      position: relative;
+      height: 40px;
+      width: 120px;
+      border-radius: 50px;
+      transition: 0.3s ease;
+      transition-property: background, border;
+      &:hover {
+        background: #3636b4;
+        cursor: $pointer, default;
+        border-color: transparent;
+      }
+      & .btn_txt {
+        font-weight: 100;
+        font-size: $font_sm_3;
+        height: fit-content;
+        width: fit-content;
+        margin-right: 2rem;
+        text-decoration: none;
+        color: $white_color;
+        user-select: none;
+      }
+      & .btn_icon {
+        color: $white_color;
+        position: absolute;
+        top: 20%;
+        right: 1rem;
+      }
+    }
+  }
+  &:hover {
+    .project_content {
+      transform: translate(0);
+    }
   }
 }
