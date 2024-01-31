@@ -9,11 +9,6 @@
     user-select: none;
   }
 }
-.child_container_light {
-  background: $light_bg;
-  @include commonProp;
-}
-.child_container_dark {
-  background: $dark_bg;
+.child_container {
   @include commonProp;
 }

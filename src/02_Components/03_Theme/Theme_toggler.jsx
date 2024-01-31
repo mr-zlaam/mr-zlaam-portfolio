@@ -6,6 +6,9 @@ const Theme = () => {
   const { isDarkMode, setIsDarkMode } = useContext(Context);
   useEffect(() => {
     const storedDarkMode = localStorage.getItem("isDarkMode");
+    if (!storedDarkMode) {
+      toggleThemeMode();
+    }
     setIsDarkMode(storedDarkMode === "true");
   }, [setIsDarkMode]);
 

@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import "./Loader.scss";
-import { Context } from "../../05_Exporter.js";
+
 const Loader = () => {
-  const { isDarkMode } = useContext(Context);
   const theme = localStorage.getItem("isDarkMode");
   return (
     <div

@@ -7,7 +7,9 @@ import { useRef } from "react";
 const Parents = () => {
   const [isAppReady, setIsAppReady] = useState(false);
   const DivRef = useRef(null);
-  const { isDarkMode, isErrorPage } = useContext(Context);
+  const { isErrorPage } = useContext(Context);
+
+  const theme = localStorage.getItem("isDarkMode");
 
   useEffect(() => {
     const handleLoad = () => {
@@ -18,17 +20,16 @@ const Parents = () => {
     }, 3000);
     return () => clearTimeout(simTiming, 0);
   }, []);
-
   return (
     <>
       <div>
         <div
           ref={DivRef}
-          className={`${
-            isDarkMode
-              ? "child_container_dark white_color"
-              : "child_container_light  black_color"
-          }`}
+          className={`child_container  ${
+            theme && theme === "true"
+              ? "dark_bg white_color"
+              : "light_bg black_color"
+          } `}
         >
           {!isAppReady ? (
             <Loader />
