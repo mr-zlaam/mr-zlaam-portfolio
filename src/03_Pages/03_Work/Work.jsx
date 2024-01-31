@@ -12,7 +12,6 @@ const Work = () => {
   let pageName = "Work";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
-    window.scrollTo(0, 0);
   }, [pageName]);
   const LinkClass = `${
     isDarkMode

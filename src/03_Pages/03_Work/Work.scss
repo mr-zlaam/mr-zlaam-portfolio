@@ -4,6 +4,7 @@
   width: 100%;
   height: fit-content;
   animation: home ease-in-out backwards 1.5s;
+  position: relative;
 
   & h1 {
     font-family: $font_bold;
