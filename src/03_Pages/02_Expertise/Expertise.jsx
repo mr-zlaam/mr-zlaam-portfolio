@@ -6,7 +6,6 @@ const Expertise = () => {
   let pageName = "Expertise";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
-    window.scrollTo(0, 0);
   }, []);
   const today = new Date();
   const monthName = today.toLocaleString("en-US", { month: "short" });
