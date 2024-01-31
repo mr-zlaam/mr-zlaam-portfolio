@@ -6,29 +6,18 @@ import { useRef } from "react";
 
 const Parents = () => {
   const [isAppReady, setIsAppReady] = useState(false);
-  const [isDomLoaded, setIsDomLoaded] = useState(false);
   const DivRef = useRef(null);
   const { isDarkMode, isErrorPage } = useContext(Context);
 
   useEffect(() => {
     const handleLoad = () => {
-      setIsDomLoaded(true);
+      setIsAppReady(true);
     };
-
-    window.addEventListener("load", handleLoad);
-
-    return () => window.removeEventListener("load", handleLoad);
+    const simTiming = setTimeout(() => {
+      handleLoad();
+    }, 3000);
+    return () => clearTimeout(simTiming, 0);
   }, []);
-
-  useLayoutEffect(() => {
-    if (isDomLoaded) {
-      const timeoutId = setTimeout(() => {
-        setIsAppReady(true);
-      }, 3000);
-
-      return () => clearTimeout(timeoutId);
-    }
-  }, [isDomLoaded]);
 
   return (
     <>
