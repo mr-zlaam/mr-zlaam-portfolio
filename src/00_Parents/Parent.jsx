@@ -10,7 +10,6 @@ const Parents = () => {
   const DivRef = useRef(null);
   const { isDarkMode, isErrorPage } = useContext(Context);
 
-  // Use useEffect to handle the load event
   useEffect(() => {
     const handleLoad = () => {
       setIsDomLoaded(true);
@@ -18,19 +17,15 @@ const Parents = () => {
 
     window.addEventListener("load", handleLoad);
 
-    // Cleanup function to remove event listener
     return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  // Use useLayoutEffect to handle rendering delay
   useLayoutEffect(() => {
     if (isDomLoaded) {
-      // Simulate the delay for 3 seconds
       const timeoutId = setTimeout(() => {
         setIsAppReady(true);
       }, 3000);
 
-      // Cleanup function to clear the timeout
       return () => clearTimeout(timeoutId);
     }
   }, [isDomLoaded]);
