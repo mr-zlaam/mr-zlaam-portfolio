@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
 
 const Work = () => {
-  const { isModalOpen, isDarkMode } = useContext(Context);
+  const { isModalOpen, isDarkMode, isImageLoaded } = useContext(Context);
   let pageName = "Work";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;

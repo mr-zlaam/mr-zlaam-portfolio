@@ -2,6 +2,7 @@
 @mixin commonProp {
   height: 100vh;
   overflow: auto;
+  overflow-x: hidden;
   padding-bottom: 2rem;
   cursor: $default, default;
   & a {

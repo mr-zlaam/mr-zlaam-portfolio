@@ -4,11 +4,16 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import "./Project_Card.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import Loader from "../Loader/Loader";
+import ImageLoader from "../ImageLoader/ImageLoader";
 const Project_Card = ({ data }) => {
-  const { setIsModalOpen, setIsSelectedData, isDarkMode } = useContext(Context);
+  const {
+    setIsModalOpen,
+    setIsSelectedData,
+    isDarkMode,
+    setIsImageLoaded,
+    isImageLoaded,
+  } = useContext(Context);
   const { image } = data;
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
 
   useEffect(() => {
     const img = new Image();
@@ -25,22 +30,25 @@ const Project_Card = ({ data }) => {
 
   return (
     <>
-      {!isImageLoaded ? (
-        <Loader />
-      ) : (
-        <div className={`project_card ${isDarkMode ? "dark_bg" : "light_bg"}`}>
-          <LazyLoadImage effect="blur" src={image} alt={data.project_title} />
-
-          <div className="project_content">
-            <div onClick={handleModalOpen} className="btn_div">
-              <span className="btn_txt">View Site</span>
-              <span className="btn_icon">
-                <RiArrowRightSLine />
-              </span>
-            </div>
+      <div className={`project_card ${isDarkMode ? "dark_bg" : "light_bg"}`}>
+        {!isImageLoaded ? (
+          <div className="imgLoaderContainer">
+            <ImageLoader />
           </div>
-        </div>
-      )}
+        ) : (
+          <>
+            <LazyLoadImage effect="blur" src={image} alt={data.project_title} />
+            <div className="project_content">
+              <div onClick={handleModalOpen} className="btn_div">
+                <span className="btn_txt">View Site</span>
+                <span className="btn_icon">
+                  <RiArrowRightSLine />
+                </span>
+              </div>
+            </div>
+          </>
+        )}
+      </div>
     </>
   );
 };

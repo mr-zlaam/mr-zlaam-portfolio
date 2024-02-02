@@ -7,9 +7,12 @@ export const ContextProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedData, setIsSelectedData] = useState(null);
   const [isErrorPage, setIsErrorPage] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   return (
     <Context.Provider
       value={{
+        isImageLoaded,
+        setIsImageLoaded,
         isDarkMode,
         setIsDarkMode,
         setIsMenuOpen,

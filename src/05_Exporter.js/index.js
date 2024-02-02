@@ -12,11 +12,13 @@ import Contact from "../03_Pages/04_Contact/Contact";
 import ErrorPage from "../03_Pages/05_ErrorPage/ErrorPage";
 import Terms from "../03_Pages/06_Terms_And_Conditions/Terms";
 import Card from "../04_Variables_And_StyleComponents/Card/Card";
+import ImageLoader from "../04_Variables_And_StyleComponents/ImageLoader/ImageLoader";
 import Loader from "../04_Variables_And_StyleComponents/Loader/Loader";
 import MenuBar from "../04_Variables_And_StyleComponents/MenuBar/MenuBar";
 import Project_Card from "../04_Variables_And_StyleComponents/Project_Card/Project_Card";
 import Project_Modal from "../04_Variables_And_StyleComponents/Project_Modal/Project_Modal";
 export {
+  ImageLoader,
   Loader,
   Parents,
   Home,
