@@ -8,9 +8,14 @@ export const ContextProvider = ({ children }) => {
   const [isSelectedData, setIsSelectedData] = useState(null);
   const [isErrorPage, setIsErrorPage] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+
   return (
     <Context.Provider
       value={{
+        isOnline,
+        setIsOnline,
+
         isImageLoaded,
         setIsImageLoaded,
         isDarkMode,

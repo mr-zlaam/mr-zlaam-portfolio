@@ -6,9 +6,10 @@ import { Context } from "../../01_Context/Context";
 import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
 import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
+import { ImageLoader, Loader } from "../../05_Exporter.js";
 
 const Work = () => {
-  const { isModalOpen, isDarkMode, isImageLoaded } = useContext(Context);
+  const { isModalOpen, isDarkMode, isOnline } = useContext(Context);
   let pageName = "Work";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
@@ -21,26 +22,30 @@ const Work = () => {
 
   return (
     <>
-      <div className="main_work_container">
-        <h1>Some Latest Work</h1>
-        <div className="projects_controller">
-          <span className="cta resume_container">
-            <HiDownload />
-            <Link className={LinkClass}>Resume</Link>
-          </span>
-          <div className="projects">
-            {project_data &&
-              project_data.map((data) => {
-                return (
-                  <div className="project_data" key={data.id}>
-                    <Project_Card data={data} />
-                    {isModalOpen && <Project_Modal />}
-                  </div>
-                );
-              })}
+      {!isOnline ? (
+        <Loader />
+      ) : (
+        <div className="main_work_container">
+          <h1>Some Latest Work</h1>
+          <div className="projects_controller">
+            <span className="cta resume_container">
+              <HiDownload />
+              <Link className={LinkClass}>Resume</Link>
+            </span>
+            <div className="projects">
+              {project_data &&
+                project_data.map((data) => {
+                  return (
+                    <div className="project_data" key={data.id}>
+                      <Project_Card data={data} />
+                      {isModalOpen && <Project_Modal />}
+                    </div>
+                  );
+                })}
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 };

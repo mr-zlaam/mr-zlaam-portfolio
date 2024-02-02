@@ -1,3 +1,4 @@
+@import "../Variables/Fonts_And_Styles.scss";
 .wheel-and-hamster {
   --dur: 1s;
   position: absolute;
@@ -7,6 +8,14 @@
   width: 12em;
   height: 12em;
   font-size: 14px;
+  & .internetChecker {
+    position: absolute;
+    width: 245px;
+    top: -5rem;
+    font-family: $font_semi, cursive;
+    letter-spacing: 1.2px;
+    font-size: $font_sm_4;
+  }
 }
 
 .wheel,
