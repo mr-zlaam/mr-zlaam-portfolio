@@ -30,7 +30,7 @@ const Project_Card = ({ data }) => {
 
   return (
     <>
-      {isImageLoaded ? (
+      {!isImageLoaded ? (
         <div className="imgLoaderContainer">
           <ImageLoader />
         </div>
