@@ -13,7 +13,7 @@ const Parents = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-      setIsAppReady(false);
+      setIsAppReady(true);
     };
     const simTiming = setTimeout(() => {
       handleLoad();
