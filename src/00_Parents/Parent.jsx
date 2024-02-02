@@ -6,6 +6,8 @@ import { useRef } from "react";
 
 const Parents = () => {
   const [isAppReady, setIsAppReady] = useState(false);
+  const [isContentLoaded, setIsContentLoaded] = useState(false);
+
   const DivRef = useRef(null);
   const { isErrorPage } = useContext(Context);
   const theme = localStorage.getItem("isDarkMode");
@@ -14,6 +16,9 @@ const Parents = () => {
     const handleLoad = () => {
       setIsAppReady(true);
     };
+    window.addEventListener("DOMContentLoaded", () => {
+      setIsContentLoaded(true);
+    });
     const simTiming = setTimeout(() => {
       handleLoad();
     }, 3000);
@@ -30,7 +35,7 @@ const Parents = () => {
               : "light_bg black_color"
           } `}
         >
-          {!isAppReady ? (
+          {!isAppReady && !isContentLoaded ? (
             <Loader />
           ) : (
             <div>
