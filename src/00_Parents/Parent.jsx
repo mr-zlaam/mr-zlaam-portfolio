@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState, useLayoutEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Parents.scss";
 import { Context } from "../01_Context/Context";
 import { Header, ImageLoader, Loader, Routers } from "../05_Exporter.js";
@@ -6,7 +6,6 @@ import { useRef } from "react";
 
 const Parents = () => {
   const [isAppReady, setIsAppReady] = useState(false);
-  const [isContentLoaded, setIsContentLoaded] = useState(false);
 
   const DivRef = useRef(null);
   const { isErrorPage } = useContext(Context);
@@ -16,9 +15,6 @@ const Parents = () => {
     const handleLoad = () => {
       setIsAppReady(true);
     };
-    window.addEventListener("load", () => {
-      setIsContentLoaded(true);
-    });
     const simTiming = setTimeout(() => {
       handleLoad();
     }, 3000);
@@ -35,7 +31,7 @@ const Parents = () => {
               : "light_bg black_color"
           } `}
         >
-          {!isAppReady && !isContentLoaded ? (
+          {!isAppReady ? (
             <Loader />
           ) : (
             <div>
