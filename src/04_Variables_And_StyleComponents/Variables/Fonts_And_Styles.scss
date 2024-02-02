@@ -127,14 +127,18 @@ $default: url("/cursor_svg/cursor.svg");
 
 .black_color {
   color: $black_color;
+  transition: color 0.3s ease;
 }
 .white_color {
   color: $white_color;
+  transition: color 0.3s ease;
 }
 .light_bg {
   background: $light_bg;
+  transition: background 0.3s ease;
 }
 .dark_bg {
+  transition: background 0.3s ease;
   background: $dark_bg;
 }
 a {

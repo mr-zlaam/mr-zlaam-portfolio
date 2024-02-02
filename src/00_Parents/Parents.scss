@@ -6,7 +6,7 @@
   padding-bottom: 2rem;
   cursor: $default, default;
   & a {
-    cursor: $pointer, default;
+    cursor: $pointer, pointer;
     user-select: none;
   }
 }
