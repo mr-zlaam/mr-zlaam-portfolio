@@ -8,10 +8,11 @@
   justify-content: center;
   align-items: center;
   cursor: $pointer, default;
+  transition: background 0.3s linear;
   .icon_sun {
     color: $white_color;
   }
   &:hover {
-    background: #0000004d;
+    background: #00000050;
   }
 }

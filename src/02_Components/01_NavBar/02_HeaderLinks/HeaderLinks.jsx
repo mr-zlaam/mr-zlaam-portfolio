@@ -9,7 +9,6 @@ const HeaderLinks = () => {
   };
   return (
     <>
-      {isMenuOpen && <div className="nav_closer" onClick={menu_closer} />}
       <nav
         className={` ${isMenuOpen ? "navbar_visible " : "navbar_invisible"}  ${
           isDarkMode ? "white_color  " : "black_color "
