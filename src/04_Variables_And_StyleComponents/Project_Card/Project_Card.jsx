@@ -30,7 +30,7 @@ const Project_Card = ({ data }) => {
 
   return (
     <>
-      <div className={`project_card ${isDarkMode ? "dark_bg" : "light_bg"}`}>
+      <div className={`project_card`}>
         {!isImageLoaded ? (
           <div className="imgLoaderContainer">
             <ImageLoader />
