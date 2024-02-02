@@ -16,7 +16,7 @@ const Parents = () => {
     const handleLoad = () => {
       setIsAppReady(true);
     };
-    window.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("load", () => {
       setIsContentLoaded(true);
     });
     const simTiming = setTimeout(() => {
