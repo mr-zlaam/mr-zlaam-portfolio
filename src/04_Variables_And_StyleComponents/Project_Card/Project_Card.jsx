@@ -30,12 +30,12 @@ const Project_Card = ({ data }) => {
 
   return (
     <>
-      <div className={`project_card`}>
-        {!isImageLoaded ? (
-          <div className="imgLoaderContainer">
-            <ImageLoader />
-          </div>
-        ) : (
+      {isImageLoaded ? (
+        <div className="imgLoaderContainer">
+          <ImageLoader />
+        </div>
+      ) : (
+        <div className={`project_card`}>
           <>
             <LazyLoadImage effect="blur" src={image} alt={data.project_title} />
             <div className="project_content">
@@ -47,8 +47,8 @@ const Project_Card = ({ data }) => {
               </div>
             </div>
           </>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };
