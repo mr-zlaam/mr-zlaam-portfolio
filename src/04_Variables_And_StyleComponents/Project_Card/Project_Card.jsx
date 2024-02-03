@@ -38,7 +38,7 @@ const Project_Card = ({ data }) => {
         <div className={`project_card`}>
           <>
             <LazyLoadImage effect="blur" src={image} alt={data.project_title} />
-            J
+            
             <div className="project_content">
               <div onClick={handleModalOpen} className="btn_div">
                 <span className="btn_txt">View Site</span>
