@@ -1,4 +1,4 @@
-import { Context, Cursor, Parents } from "./05_Exporter.js";
+import { Context, Cursor, Parents } from "./index";
 import { useContext, useEffect } from "react";
 
 function App() {

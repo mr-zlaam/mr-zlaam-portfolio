@@ -1,13 +1,6 @@
 import {} from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import {
-  Contact,
-  ErrorPage,
-  Expertise,
-  Home,
-  Terms,
-  Work,
-} from "../../05_Exporter.js";
+import { Contact, ErrorPage, Expertise, Home, Terms, Work } from "../../index";
 import { AnimatePresence } from "framer-motion";
 
 const Routers = () => {

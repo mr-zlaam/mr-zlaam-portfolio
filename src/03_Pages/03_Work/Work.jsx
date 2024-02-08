@@ -1,12 +1,9 @@
 import { useContext, useEffect } from "react";
 import "./Work.scss";
 import project_data from "../../Work.json";
-import Project_Modal from "../../04_Variables_And_StyleComponents/Project_Modal/Project_Modal";
-import { Context } from "../../01_Context/Context";
-import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
 import { Link } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
-import { ImageLoader, Loader } from "../../05_Exporter.js";
+import { Loader, Context, Project_Modal, Project_Card } from "../../index.js";
 
 const Work = () => {
   const { isModalOpen, isDarkMode, isOnline } = useContext(Context);
@@ -22,7 +19,7 @@ const Work = () => {
 
   return (
     <>
-      {!isOnline ? (
+      {isOnline ? (
         <Loader />
       ) : (
         <div className="main_work_container">

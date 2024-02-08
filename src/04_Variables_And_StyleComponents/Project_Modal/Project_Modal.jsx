@@ -3,7 +3,7 @@ import "./Project_Modal.scss";
 import { TbExternalLink } from "react-icons/tb";
 
 import { FaArrowLeft } from "react-icons/fa6";
-import { Context } from "../../01_Context/Context";
+import { Context } from "../../index";
 import { Link } from "react-router-dom";
 
 const Project_Modal = () => {

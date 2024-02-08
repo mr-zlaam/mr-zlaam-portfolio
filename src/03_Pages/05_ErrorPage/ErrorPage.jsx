@@ -2,7 +2,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { useContext, useEffect } from "react";
 import "./ErrorPage.scss";
 import { Link } from "react-router-dom";
-import { Context } from "../../01_Context/Context";
+import { Context } from "../../index";
 
 const ErrorPage = () => {
   const { setIsErrorPage } = useContext(Context);

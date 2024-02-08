@@ -1,14 +1,14 @@
-import { useContext } from "react";
+import { useCallback, useContext } from "react";
 import "./MenuBar.scss";
-import { Context } from "../../01_Context/Context";
+import { Context } from "../../index";
 import { RiMenu3Fill } from "react-icons/ri";
 import { MdClear } from "react-icons/md";
 
 const MenuBar = () => {
   const { isMenuOpen, setIsMenuOpen } = useContext(Context);
-  const menu_toggler = () => {
+  const menu_toggler = useCallback(() => {
     setIsMenuOpen((prev) => !prev);
-  };
+  }, []);
   return (
     <>
       {isMenuOpen ? (

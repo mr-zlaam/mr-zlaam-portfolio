@@ -1,15 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Context } from "../../01_Context/Context";
+import { Context, ImageLoader } from "../../index";
 import { RiArrowRightSLine } from "react-icons/ri";
 import "./Project_Card.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import ImageLoader from "../ImageLoader/ImageLoader";
 const Project_Card = ({ data }) => {
   const {
     setIsModalOpen,
     setIsSelectedData,
-    isDarkMode,
+
     setIsImageLoaded,
     isImageLoaded,
   } = useContext(Context);
@@ -38,7 +37,7 @@ const Project_Card = ({ data }) => {
         <div className={`project_card`}>
           <>
             <LazyLoadImage effect="blur" src={image} alt={data.project_title} />
-            
+
             <div className="project_content">
               <div onClick={handleModalOpen} className="btn_div">
                 <span className="btn_txt">View Site</span>

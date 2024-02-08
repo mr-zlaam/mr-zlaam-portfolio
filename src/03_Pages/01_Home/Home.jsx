@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 
 import "./Home.scss";
-import { Context } from "../../05_Exporter.js";
+import { Context } from "../../index";
 
 const Home = () => {
   const { setIsErrorPage } = useContext(Context);

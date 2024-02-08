@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
 import { BsFillMoonFill, BsSunFill } from "react-icons/bs";
-import { Context } from "../../01_Context/Context";
+import { Context } from "../../index";
 import "./Theme.scss";
 const Theme = () => {
   const { isDarkMode, setIsDarkMode } = useContext(Context);

@@ -1,7 +1,7 @@
 import "./Expertise.scss";
 import data from "../../About.json";
-import { Card, Context, Loader } from "../../05_Exporter.js";
 import { useContext, useEffect } from "react";
+import { Card, Context, Loader } from "../../index";
 const Expertise = () => {
   const { isOnline } = useContext(Context);
   let pageName = "Expertise";

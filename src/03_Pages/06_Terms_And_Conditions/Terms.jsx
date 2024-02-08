@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useContext, useEffect } from "react";
+import { memo, useContext, useEffect } from "react";
 import "./Terms.scss";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Context } from "../../05_Exporter.js";
+import { Context } from "../../index";
 const Terms = () => {
   const { isDarkMode } = useContext(Context);
   let pageName = "Terms & Conditions";
@@ -97,4 +97,4 @@ const Terms = () => {
   );
 };
 
-export default Terms;
+export default memo(Terms);

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./Loader.scss";
-import { Context } from "../../05_Exporter.js";
+import { Context } from "../../index";
 
 const Loader = () => {
   const { isOnline } = useContext(Context);

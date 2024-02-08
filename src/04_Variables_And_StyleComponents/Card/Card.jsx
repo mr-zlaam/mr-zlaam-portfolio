@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import "./Card.scss";
-import { Context } from "../../01_Context/Context";
-import ExpertieseLoader from "../ExpertiseLoader/ExpertiseLoader";
+import { Context, ExpertieseLoader } from "../../index";
 const Card = ({ data }) => {
   const { isDarkMode } = useContext(Context);
   const { image, title, content } = data;

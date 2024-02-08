@@ -2,13 +2,40 @@ import { useContext, useEffect } from "react";
 import "./Contact.scss";
 import { Link } from "react-router-dom";
 import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
-import { Context } from "../../05_Exporter.js";
+import { Context } from "../../index";
 import { MdEmail } from "react-icons/md";
 import { BsMessenger } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
 
 const Contact = () => {
+  const Icons = [
+    {
+      Icon: MdEmail,
+      IconName: "Email",
+      path: `mailto:mrzalaam@gmail.com`,
+    },
+    {
+      Icon: BsMessenger,
+      IconName: "Messenger",
+      path: `https://www.facebook.com/messages/t/100052341221564`,
+    },
+    {
+      Icon: FaLinkedin,
+      IconName: "LinkedIn",
+      path: `https://www.linkedin.com/in/mr-zalaam-29b944296/`,
+    },
+    {
+      Icon: IoLogoGithub,
+      IconName: "Github",
+      path: `https://github.com/mr-zlaam`,
+    },
+    {
+      Icon: IoLogoTwitter,
+      IconName: "Twitter",
+      path: `https://twitter.com/mr_zlaam`,
+    },
+  ];
   let pageName = "Contact";
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,96 +58,26 @@ const Contact = () => {
 
         <div className="parent_contact_wrapper">
           <div className="contact_wrapper">
-            <div className="email icon_control ">
-              <span>
-                <MdEmail className="icon" />
-              </span>
-              <span className="cta">
-                <Link
-                  target="_blank"
-                  className={`${
-                    isDarkMode
-                      ? "link_animation_light white_color"
-                      : "link_animation_dark black_color"
-                  }`}
-                  to="mailto:mrzalaam@gmail.com"
-                >
-                  Email
-                </Link>
-              </span>
-            </div>
-            <div className="messenger icon_control">
-              <span className="icon">
-                <BsMessenger className="icon" />
-              </span>
-              <span className="cta">
-                <Link
-                  target="_blank"
-                  className={`${
-                    isDarkMode
-                      ? "link_animation_light white_color"
-                      : "link_animation_dark black_color"
-                  }`}
-                  to={"https://www.facebook.com/messages/t/100052341221564"}
-                >
-                  Messenger
-                </Link>
-              </span>
-            </div>
-            <div className="linkedin icon_control">
-              <span className="icon">
-                <FaLinkedin className="icon" />
-              </span>
-              <span className="cta">
-                <Link
-                  target="_blank"
-                  className={`${
-                    isDarkMode
-                      ? "link_animation_light white_color"
-                      : "link_animation_dark black_color"
-                  }`}
-                  to={"https://www.linkedin.com/in/mr-zalaam-29b944296/"}
-                >
-                  LinkedIn
-                </Link>
-              </span>
-            </div>
-            <div className="github icon_control">
-              <span className="icon">
-                <IoLogoGithub className="icon" />
-              </span>
-              <span className="cta">
-                <Link
-                  target="_blank"
-                  className={`${
-                    isDarkMode
-                      ? "link_animation_light white_color"
-                      : "link_animation_dark black_color"
-                  }`}
-                  to={"https://github.com/mr-zlaam"}
-                >
-                  Github
-                </Link>
-              </span>
-            </div>
-            <div className="twitter icon_control">
-              <span className="icon">
-                <IoLogoTwitter className="icon" />
-              </span>
-              <span className="cta">
-                <Link
-                  target="_blank"
-                  className={`${
-                    isDarkMode
-                      ? "link_animation_light white_color"
-                      : "link_animation_dark black_color"
-                  }`}
-                  to={"https://twitter.com/mr_zlaam"}
-                >
-                  X(Twitter)
-                </Link>
-              </span>
-            </div>
+            {Icons?.map((icon) => {
+              return (
+                <div key={icon.IconName} className="icon_control">
+                  <span>{<icon.Icon className="icon" />}</span>
+                  <span className="cta">
+                    <Link
+                      to={icon.path}
+                      target="_blank"
+                      className={`${
+                        isDarkMode
+                          ? "link_animation_light white_color"
+                          : "link_animation_dark black_color"
+                      }`}
+                    >
+                      {icon.IconName}
+                    </Link>
+                  </span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,12 +1,30 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import "./HeaderLinks.scss";
-import { Link } from "react-router-dom";
-import { Context } from "../../../01_Context/Context";
+import { Context, Link } from "../../../index";
 const HeaderLinks = () => {
   const { isDarkMode, isMenuOpen, setIsMenuOpen } = useContext(Context);
   const menu_closer = () => {
     setIsMenuOpen(false);
   };
+  const RoutesPath = [
+    {
+      path: "/",
+      text: "Home",
+    },
+    {
+      path: "/expertise",
+      text: "Expertise",
+    },
+    {
+      path: "/work",
+      text: "Work",
+    },
+    {
+      path: "/contact",
+      text: "Contact",
+    },
+  ];
+
   return (
     <>
       <nav
@@ -14,60 +32,27 @@ const HeaderLinks = () => {
           isDarkMode ? "white_color  " : "black_color "
         }
         ${isDarkMode ? "bg_dark  " : "bg_light "}
-            
           `}
       >
-        <span onClick={menu_closer} className="cta routes">
-          <Link
-            to={"/"}
-            className={`${
-              isDarkMode
-                ? "link_animation_light white_color"
-                : "link_animation_dark black_color "
-            }`}
-          >
-            Home
-          </Link>
-        </span>
-        <span onClick={menu_closer} className="cta routes">
-          <Link
-            to={"/expertise"}
-            className={`${
-              isDarkMode
-                ? "link_animation_light white_color"
-                : "link_animation_dark black_color "
-            }`}
-          >
-            Expertise
-          </Link>
-        </span>
-        <span onClick={menu_closer} className="cta routes">
-          <Link
-            to={"work"}
-            className={`${
-              isDarkMode
-                ? "link_animation_light white_color"
-                : "link_animation_dark black_color "
-            }`}
-          >
-            Work
-          </Link>
-        </span>
-        <span onClick={menu_closer} className="cta routes">
-          <Link
-            to={"/contact"}
-            className={`${
-              isDarkMode
-                ? "link_animation_light white_color"
-                : "link_animation_dark black_color "
-            }`}
-          >
-            Contact
-          </Link>
-        </span>
+        {RoutesPath?.map((data) => {
+          return (
+            <span key={data.text} onClick={menu_closer} className="cta routes">
+              <Link
+                className={`${
+                  isDarkMode
+                    ? "link_animation_light white_color"
+                    : "link_animation_dark black_color "
+                }`}
+                to={data.path}
+              >
+                {data.text}
+              </Link>
+            </span>
+          );
+        })}
       </nav>
     </>
   );
 };
 
-export default HeaderLinks;
+export default memo(HeaderLinks);
