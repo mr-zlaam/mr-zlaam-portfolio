@@ -53,5 +53,10 @@
     "title": "Redux Toolkit",
     "image": "svgs/redux.svg",
     "content": "Redux Toolkit is a very beautiful library for state management. It helps a lot while dealing with complex states."
+  },
+  {
+    "title": "Firebase",
+    "image": "svgs/firebase.svg",
+    "content": "I mostly use firebase to provide medium size apps like blog app or small e-commerce store. "
   }
 ]

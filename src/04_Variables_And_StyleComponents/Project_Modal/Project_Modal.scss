@@ -9,7 +9,7 @@
   transform: translate(-50%, -50%);
   overflow: auto;
   z-index: 21;
-  animation: modal_animation ease-in-out backwards 1s;
+  animation: modal_animation ease-in-out backwards 0.3s;
 
   .modal_closer {
     position: sticky;
@@ -27,13 +27,12 @@
     transition-property: background, color;
     &:hover {
       background-color: #00000075;
-
-      color: #fff;
+      color: #ffffff;
     }
   }
   & .image_controller {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     max-width: 1200px;
     max-height: 600px;
 
