@@ -19,7 +19,7 @@ const Work = () => {
 
   return (
     <>
-      {isOnline ? (
+      {!isOnline ? (
         <Loader />
       ) : (
         <div className="main_work_container">

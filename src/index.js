@@ -30,4 +30,3 @@ export { default as Project_Modal } from "./04_Variables_And_StyleComponents/Pro
 export { Link } from "react-router-dom";
 
 //? Custom Hooks
-export { default as useTheme } from "./06_CustomHooks/useThemeHook";

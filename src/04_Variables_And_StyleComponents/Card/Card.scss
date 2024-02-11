@@ -28,7 +28,7 @@
   opacity: 0;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.05);
   user-select: none;
-  background: #00000021;
+  background: #28282b85;
 }
 
 .card:hover .card__content {
@@ -40,13 +40,15 @@
   margin: 0;
   font-size: 24px;
   font-family: $font_semi;
+  color: #ffffff;
 }
 
 .card__description {
-  margin: 10px 0 0;
-  font-size: $font_sm_3;
+  margin: 10px 0;
+  font-size: $font_sm_2;
   font-family: $font_handwriting;
   letter-spacing: 1px;
+  color: #fff;
 }
 @media screen and (max-width: 548px) {
   .card {

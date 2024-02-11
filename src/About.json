@@ -5,14 +5,24 @@
     "content": "If Javascript wasn't there, then it would be my favorite language; of course, it is also my first ever programming language."
   },
   {
+    "title": "Django",
+    "image": "svgs/django.svg",
+    "content": "It is extremly handy, and organized, and Django is my preferred framework for e-commerce sites due to its advanced features."
+  },
+  {
     "title": "JavaScript",
     "image": "svgs/js.svg",
     "content": "JavaScript is my favorite programming language. I feel very comfortable when it comes to working with JavaScript."
   },
   {
-    "title": "Django",
-    "image": "svgs/django.svg",
-    "content": "It is extremly handy, and organized, and Django is my preferred framework for e-commerce sites due to its advanced features and organization."
+    "title": "TypeScript",
+    "image": "svgs/typescript.svg",
+    "content": "Typescript is known as the drug for developers. Some legend says if you taste typescript once, you will never love other tastes."
+  },
+  {
+    "title": "NextJS",
+    "image": "svgs/nextjs.svg",
+    "content": "A Beautify creation by vercel \"Next JS\" is consider as best tool to write full-stack apps. "
   },
   {
     "title": "React",
