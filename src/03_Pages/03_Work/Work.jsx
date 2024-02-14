@@ -28,6 +28,8 @@ const Work = () => {
             <span className="cta resume_container">
               <HiDownload />
               <Link
+                target="_blank"
+                rel="Resume of Zlaam"
                 to="https://drive.google.com/file/d/1JrFEvYp3EI3fY0iSrKmVpovWwXGruSc0/view"
                 className={LinkClass}
               >
