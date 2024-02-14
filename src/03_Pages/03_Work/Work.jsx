@@ -27,7 +27,12 @@ const Work = () => {
           <div className="projects_controller">
             <span className="cta resume_container">
               <HiDownload />
-              <Link className={LinkClass}>Resume</Link>
+              <Link
+                to="https://drive.google.com/file/d/1JrFEvYp3EI3fY0iSrKmVpovWwXGruSc0/view"
+                className={LinkClass}
+              >
+                Resume
+              </Link>
             </span>
             <div className="projects">
               {project_data &&
