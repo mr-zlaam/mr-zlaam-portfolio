@@ -1,10 +1,10 @@
-import { memo, useContext } from "react";
+import { useContext } from "react";
 import "./HeaderLinks.scss";
 import { Context, Link } from "../../../index";
-const HeaderLinks = () => {
-  const { isDarkMode, isMenuOpen, setIsMenuOpen } = useContext(Context);
+const HeaderLinks = ({ isMenuOpens, setIsMenuOpens }) => {
+  const { isDarkMode } = useContext(Context);
   const menu_closer = () => {
-    setIsMenuOpen(false);
+    setIsMenuOpens(false);
   };
   const RoutesPath = [
     {
@@ -28,7 +28,7 @@ const HeaderLinks = () => {
   return (
     <>
       <nav
-        className={` ${isMenuOpen ? "navbar_visible " : "navbar_invisible"}  ${
+        className={` ${isMenuOpens ? "navbar_visible " : "navbar_invisible"}  ${
           isDarkMode ? "white_color  " : "black_color "
         }
         ${isDarkMode ? "bg_dark  " : "bg_light "}
@@ -55,4 +55,4 @@ const HeaderLinks = () => {
   );
 };
 
-export default memo(HeaderLinks);
+export default HeaderLinks;

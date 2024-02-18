@@ -1,26 +1,43 @@
 import "./Header.scss";
-import { useContext, useEffect } from "react";
-import { Context, MenuBar, Theme, HeaderLinks, Link } from "../../../index";
+import { useCallback, useContext, useEffect, useState } from "react";
+import { Context, Theme, HeaderLinks, Link } from "../../../index";
+import { MdClear } from "react-icons/md";
+import { RiMenu3Fill } from "react-icons/ri";
 const Header = () => {
-  const { setIsErrorPage, isMenuOpen, setIsMenuOpen } = useContext(Context);
-
+  const { setIsErrorPage } = useContext(Context);
+  const [isMenuOpens, setIsMenuOpens] = useState(false);
   useEffect(() => {
     setIsErrorPage(false);
-  }, [Header]);
+  }, [setIsErrorPage]);
   const menu_closer = () => {
-    setIsMenuOpen(false);
+    setIsMenuOpens(false);
   };
+  const menu_toggler = useCallback(() => {
+    setIsMenuOpens((prev) => !prev);
+  }, []);
+
   return (
     <>
-      {isMenuOpen && <div className="nav_closer" onClick={menu_closer} />}
+      {isMenuOpens && <div className="nav_closer" onClick={menu_closer} />}
 
       <header className={`nav_container`}>
         <Link to={"/"} className="logo">
           <img src="/logo/zlaam.png" alt="logo" />
         </Link>
-        <HeaderLinks />
+        <HeaderLinks
+          isMenuOpens={isMenuOpens}
+          setIsMenuOpens={setIsMenuOpens}
+        />
         <div className={`menu_bar`}>
-          <MenuBar />
+          {isMenuOpens ? (
+            <div onClick={menu_toggler} className="menu">
+              <MdClear size={25} />
+            </div>
+          ) : (
+            <div onClick={menu_toggler} className="clear">
+              <RiMenu3Fill size={25} />
+            </div>
+          )}{" "}
         </div>
         <div className="theme_toggler">
           <Theme />

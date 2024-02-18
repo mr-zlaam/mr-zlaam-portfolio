@@ -16,7 +16,6 @@ const Work = () => {
       ? "link_animation_light white_color"
       : "link_animation_dark black_color"
   }`;
-
   return (
     <>
       {!isOnline ? (

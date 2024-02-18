@@ -7,7 +7,6 @@ export * from "./01_Context/ContextProvider";
 export { default as Header } from "./02_Components/01_NavBar/01_Header/Header";
 export { default as HeaderLinks } from "./02_Components/01_NavBar/02_HeaderLinks/HeaderLinks";
 export { default as Theme } from "./02_Components/03_Theme/Theme_toggler";
-export { default as MenuBar } from "./04_Variables_And_StyleComponents/MenuBar/MenuBar";
 export { default as Cursor } from "./02_Components/Cursor/Cursor";
 //? Routers
 export { default as Routers } from "./02_Components/02_Routers/01_Routers";
