@@ -7,7 +7,7 @@ const Expertise = () => {
   let pageName = "Expertise";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
-  }, []);
+  }, [pageName]);
   const today = new Date();
   const monthName = today.toLocaleString("en-US", { month: "short" });
   const date = new Date().getDate();

@@ -4,7 +4,7 @@ import { Context, ExpertieseLoader } from "../../index";
 const Card = ({ data }) => {
   const { isDarkMode } = useContext(Context);
   const { image, title, content } = data;
-  const [isDataLoaded, setisDataLoaded] = useState();
+  const [isDataLoaded, setisDataLoaded] = useState(null);
   useEffect(() => {
     const img = new Image();
     img.onload = () => {
