@@ -6,17 +6,24 @@ nav {
     a {
       font-size: $font_md_1;
       user-select: none;
-
-      &:focus {
-        font-style: italic;
-
-        font-weight: $font_bold;
-      }
     }
   }
 }
 html {
   cursor: $default;
+}
+.active {
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  font-size: 4rem;
+}
+.not_active {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1020px) {
   @mixin navbar_toggle {

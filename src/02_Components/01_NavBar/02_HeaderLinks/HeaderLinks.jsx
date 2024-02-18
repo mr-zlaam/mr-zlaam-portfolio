@@ -1,11 +1,15 @@
 import { useContext } from "react";
 import "./HeaderLinks.scss";
-import { Context, Link } from "../../../index";
+import { Context } from "../../../index";
+import { NavLink } from "react-router-dom";
 const HeaderLinks = ({ isMenuOpens, setIsMenuOpens }) => {
   const { isDarkMode } = useContext(Context);
   const menu_closer = () => {
     setIsMenuOpens(false);
   };
+  let themeClass = isDarkMode
+    ? "link_animation_light white_color"
+    : "link_animation_dark black_color ";
   const RoutesPath = [
     {
       path: "/",
@@ -37,16 +41,14 @@ const HeaderLinks = ({ isMenuOpens, setIsMenuOpens }) => {
         {RoutesPath?.map((data) => {
           return (
             <span key={data.text} onClick={menu_closer} className="cta routes">
-              <Link
-                className={`${
-                  isDarkMode
-                    ? "link_animation_light white_color"
-                    : "link_animation_dark black_color "
-                }`}
+              <NavLink
+                className={({ isActive }) =>
+                  `${isActive ? "active" : "not_active"}  ${themeClass}`
+                }
                 to={data.path}
               >
                 {data.text}
-              </Link>
+              </NavLink>
             </span>
           );
         })}
