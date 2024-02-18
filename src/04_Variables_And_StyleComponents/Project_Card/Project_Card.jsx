@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { Context, ImageLoader } from "../../index";
 import { RiArrowRightSLine } from "react-icons/ri";
 import "./Project_Card.scss";

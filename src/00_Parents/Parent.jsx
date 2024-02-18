@@ -1,4 +1,4 @@
-import { memo, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./Parents.scss";
 import { Header, Loader, Routers, Context } from "../index";
 import { useRef } from "react";
@@ -43,4 +43,4 @@ const Parents = () => {
   );
 };
 
-export default memo(Parents);
+export default Parents;
