@@ -1,35 +1,54 @@
 [
   {
-    "id": 1,
-    "image": "/projects/zlaamgallery.webp",
+    "id": "1",
+    "imageContainer": {
+      "image": "https://live.staticflickr.com/65535/53558228700_72d2559b6a_z.jpg"
+    },
     "project_url": "https://zlaamgallery.netlify.app",
     "project_title": "Image Gallery",
     "project_desc": "ZlaamGallery stands as a hallmark creation among my portfolio of apps. Renowned for its user-friendly interface and aesthetically pleasing gradient backgrounds, it exemplifies simplicity and elegance. Offering a plethora of functionalities, users can seamlessly create accounts, share images through a Content Delivery Network (CDN) link, and effortlessly toggle between dark and light modes. The app empowers users by providing access only to their uploaded photos, ensuring a personalized experience. Additionally, users can log out at their convenience, further enhancing the app's user-centric design."
   },
   {
-    "id": 2,
-    "image": "/projects/chat-io.webp",
-    "project_url": "https://wechat-io.netlify.app/l",
+    "id": "2",
+    "imageContainer": {
+      "image": "https://live.staticflickr.com/65535/53556926677_09b5ed8686_z.jpg"
+    },
+    "project_url": "https://wechat-io.netlify.app/",
     "project_title": "WeChat-io",
     "project_desc": "Chat-io is a chat app where you can chat with your friends privately. There are two ways to login in this app: verifying your email, and using Google (recommended). In email verification, you will get a link to your email address, and you just have to click on it to login to the app. With Google, you just have to click on 'continue with Google, which is traditional. After signing in, you have to create a room. In order to create a room, you've got to give a name to the room, which must be same to your friend's room name. In this app, multiple users can also use the room as long as they know the name of the room."
   },
   {
-    "id": 3,
-    "image": "/projects/animequiz.webp",
-    "project_url": "https://animequizler.netlify.app/",
-    "project_title": "Anime Quizler",
-    "project_desc": "As an avid anime lover, I built this quiz anime web app to keep myself entertained. But I've retrieved all of the information using a Restful API. This app is similar to an exam in that it has multiple-choice questions from which you must pick one of four. Finally, you will be given the results, which will tell you how many questions you were able to answer. "
+    "id": "3",
+    "imageContainer": {
+      "image": "https://live.staticflickr.com/65535/53558113534_0d49f03bee_z.jpg"
+    },
+    "project_url": "https://getmovie-info.netlify.app/",
+    "project_title": "GetMovie-Info",
+    "project_desc": "GetMovie Info is a movie app that lets you explore movie details. You can search for specific movies, and the app fetches data from 500 pages, organizing results into separate pages using pagination. I've utilized Tanstack Query (React Query) to optimize the app, introducing features like caching. Additionally, you can add your favorite movies to a watchlist, but you need to log in using Google first. That's all for now."
   },
   {
-    "id": 4,
-    "image": "/projects/Reminders.webp",
+    "id": "4",
+    "imageContainer": {
+      "image": "https://live.staticflickr.com/65535/53558228695_663d01611b_z.jpg"
+    },
+    "project_url": "https://animequizler.netlify.app/",
+    "project_title": "Anime Quizler",
+    "project_desc": "As an avid anime lover, I built this quiz anime web app to keep myself entertained. But I've retrieved all of the information using a Restful API. This app is similar to an exam in that it has multiple-choice questions from which you must pick one of four. Finally, you will be given the results, which will tell you how many questions you were able to answer."
+  },
+  {
+    "id": "5",
+    "imageContainer": {
+      "image": "https://live.staticflickr.com/65535/53558228535_a65a583d25_z.jpg"
+    },
     "project_url": "https://oldreminders.netlify.app/",
     "project_title": "Reminders",
     "project_desc": "Hello there! Currently, you're watching a Todo app that has authentication. In order to create todos, you have to login first. You can create, edit, and delete your todos. Don't worry, your Todo won't be removed automatically unless you remove it manually. I've used React on the frontend and Firebase on the backend.One important thing is that if you just want to test the app, you don't have to create an account for it. The login information is already provided in the project image above."
   },
   {
-    "id": 5,
-    "image": "/projects/dreambuilders.webp",
+    "id": "6",
+    "imageContainer": {
+      "image": "https://live.staticflickr.com/65535/53557778856_3b038aae12_z.jpg"
+    },
     "project_url": "https://dreambuilderss.netlify.app",
     "project_title": "DreamBuilders",
     "project_desc": "It is a portfolio of a construction company. Although most parts of this app are static, it still has a decent design. I have used React along with SASS/CSS to build this site. Please check out the app and let me know your opinion. Thank you!"

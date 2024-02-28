@@ -1,15 +1,11 @@
-.imgLoaderContainer {
-  display: grid;
-  place-items: center;
-  height: 40vh;
-}
+@import "../Variables/Fonts_And_Styles.scss";
 .imgLoader {
   width: 64px;
   height: 64px;
   position: relative;
-  background: #dede;
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: 0px 0px 4px #888888;
 }
 .imgLoader:before {
   content: "";
@@ -19,8 +15,8 @@
   width: 40px;
   height: 40px;
   transform: rotate(45deg) translate(30%, 40%);
-  background: #2e86de;
-  box-shadow: 32px -34px 0 5px #0097e6;
+  background: #7178d09d;
+  box-shadow: 30px -34px 0 5px #808080;
   animation: slide 2s infinite ease-in-out alternate;
 }
 
@@ -32,7 +28,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #0097e6;
+  background: #808080;
   transform: rotate(0deg);
   transform-origin: 35px 145px;
   animation: rotate 2s infinite ease-in-out;

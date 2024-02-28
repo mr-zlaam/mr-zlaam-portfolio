@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import "./Parents.scss";
 import { Header, Loader, Routers, Context } from "../index";
 import { useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 const Parents = () => {
   const [isAppReady, setIsAppReady] = useState(false);
@@ -19,6 +20,8 @@ const Parents = () => {
     }, 3000);
     return () => clearTimeout(simTiming, 0);
   }, []);
+  const getLocation = useLocation();
+  const getCurrentpath = getLocation.pathname.includes("/project/detail");
   return (
     <>
       <div>
@@ -34,7 +37,9 @@ const Parents = () => {
             <Loader />
           ) : (
             <div>
-              {isErrorPage ? null : <Header />} <Routers />
+              {isErrorPage || getCurrentpath ? null : <Header />}
+
+              <Routers />
             </div>
           )}
         </div>

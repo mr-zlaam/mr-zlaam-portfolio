@@ -1,49 +1,42 @@
 @import "../Variables/Fonts_And_Styles.scss";
 
 .main_modal_container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  height: 100%;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  overflow: auto;
-  z-index: 21;
-  animation: modal_animation ease-in-out backwards 0.3s;
+  animation: home ease-in-out backwards 0.5s;
 
-  .modal_closer {
+  padding-bottom: 5rem;
+  .return_to_main_page {
     position: sticky;
+    margin: 1rem;
     top: 2rem;
     left: 2rem;
-    z-index: 30;
-    cursor: $pointer, pointer;
+    color: #000000;
     height: 40px;
     width: 40px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border-radius: 50%;
     transition: 0.3s ease;
     transition-property: background, color;
+
     &:hover {
-      background-color: #00000075;
+      background: #0000002b;
       color: #ffffff;
     }
   }
-  & .image_controller {
+  .modal_image_container {
+    overflow: hidden;
     margin: auto;
-    margin-top: 2.5rem;
-    max-width: 1200px;
-    max-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     & img {
-      padding: 1rem;
-      object-fit: contain;
-      user-select: none;
-      -webkit-user-drag: none;
+      border-radius: 20px;
       width: 100%;
       height: 100%;
-      filter: drop-shadow(0px 0px 2px #28282b);
+      user-select: none;
+      -webkit-user-drag: none;
     }
   }
   & .description_controller {
@@ -52,9 +45,10 @@
 
     & .project_title {
       letter-spacing: 2px;
-      font-family: $font_md;
+      font-family: $font_bold;
       text-align: center;
       font-size: $font_xl_1;
+      margin: 1rem;
     }
     & .project_desc_txt {
       font-size: $font_md_3;
@@ -71,36 +65,28 @@
       letter-spacing: 3px;
     }
   }
-  .project_btn {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    background: #000000a9;
-    display: block;
-    height: 50px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    & a {
-      color: white;
-      font-family: $font_regular;
-      letter-spacing: 2px;
-      transition: 0.3s ease-in-out;
-      transition-property: transform;
-      text-decoration: none;
-      &:hover {
-        transform: scale(0.9);
-      }
-    }
-  }
 }
-
-@keyframes modal_animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+.project_btn {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #000000a9;
+  display: block;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & a {
+    color: white;
+    font-family: $font_regular;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    transition-property: transform;
+    text-decoration: none;
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 }
