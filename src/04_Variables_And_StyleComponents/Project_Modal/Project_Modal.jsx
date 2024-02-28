@@ -42,11 +42,7 @@ function Project_Modal() {
           />
         </Link>
         <section className="modal_image_container">
-          <LazyLoadImage
-            effect="blur"
-            src={data[0]?.imageContainer["image"]}
-            width={"60%"}
-          />
+          <LazyLoadImage effect="blur" src={data[0]?.imageContainer["image"]} />
         </section>
         <div className="description_controller">
           <h1 className="project_title">{data[0]?.project_title}</h1>
