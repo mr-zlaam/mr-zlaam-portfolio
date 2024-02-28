@@ -18,7 +18,6 @@ function Project_Modal() {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["modal_data"],
     queryFn: fetchData,
-    staleTime: 1200000,
     placeholderData: keepPreviousData,
   });
   if (isLoading)
