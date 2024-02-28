@@ -35,7 +35,7 @@ function Project_Modal() {
   return (
     <>
       <main className="main_modal_container">
-        <Link title="exit" to={"/work"} className="return_to_main_page">
+        <Link title="back" to={"/work"} className="return_to_main_page">
           <FaArrowLeft
             color={theme && theme === "true" ? "#ffffff" : "#28282b"}
           />
