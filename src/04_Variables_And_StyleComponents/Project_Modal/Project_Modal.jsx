@@ -19,13 +19,13 @@ function Project_Modal() {
     queryKey: ["modal_data"],
     queryFn: fetchData,
     placeholderData: keepPreviousData,
+    cacheTime: 120000,
   });
   if (isLoading)
     return (
       <div>
         <div className="loadingState">
           <ExpertieseLoader />
-          hero
         </div>
       </div>
     );

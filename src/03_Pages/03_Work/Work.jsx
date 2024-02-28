@@ -21,7 +21,8 @@ const Work = () => {
     queryKey: ["data"],
     queryFn: fetchImages,
     placeholderData: keepPreviousData,
-    staleTime: 120000,
+    staleTime: Infinity,
+    cacheTime: 120000,
   });
   const LinkClass = `${
     isDarkMode
