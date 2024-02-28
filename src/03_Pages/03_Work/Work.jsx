@@ -1,19 +1,22 @@
 import "./Work.scss";
 import project_data from "../../Work.json";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Context } from "../../01_Context/Context";
 import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
 import ExpertieseLoader from "../../04_Variables_And_StyleComponents/ExpertiseLoader/ExpertiseLoader";
-const fetchImages = () => {
-  const url = project_data;
-  return url;
-};
 
 const Work = () => {
+  const location = useLocation();
+  const getlocation = location.pathname === "/work";
+  if (getlocation) document.title = `Zlaam | Work`;
   const { isDarkMode } = useContext(Context);
+  const fetchImages = () => {
+    const url = project_data;
+    return url;
+  };
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["data"],
     queryFn: fetchImages,
@@ -31,10 +34,7 @@ const Work = () => {
       </div>
     );
   if (isError) return <div className="loadingState">{error.message}</div>;
-  let pageName = "Work";
-  useEffect(() => {
-    document.title = `Zlaam | ${pageName}`;
-  }, [pageName]);
+
   return (
     <main className="work_container">
       <section className="section_up">
