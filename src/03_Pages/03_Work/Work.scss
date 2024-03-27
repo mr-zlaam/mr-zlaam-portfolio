@@ -1,8 +1,10 @@
 @import "../../04_Variables_And_StyleComponents/Variables/Fonts_And_Styles.scss";
 
 .work_container {
-  height: 89.5vh;
+  height: 90.3vh;
   overflow: auto;
+  position: fixed;
+  width: 100%;
   animation: home ease-in-out backwards 0.8s;
   .section_up {
     height: 90px;
@@ -13,6 +15,9 @@
     .some_latest_work {
       font-size: $font_lg_5;
       font-family: $font_bold;
+    }
+    .resume_container {
+      display: flex;
     }
   }
   .section_down {

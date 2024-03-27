@@ -46,7 +46,7 @@ const Work = () => {
           <Link
             target="_blank"
             rel="Resume of Zlaam"
-            to="https://drive.google.com/file/d/1JrFEvYp3EI3fY0iSrKmVpovWwXGruSc0/view"
+            to="https://drive.google.com/drive/u/0/folders/1RL7jdYWKTREv6fflG16j5LgXb_d-HO1X"
             className={LinkClass}
           >
             Resume
