@@ -6,7 +6,7 @@ import {
   Expertise,
   Home,
   Project_Modal,
-  Terms,
+  // Terms,
   Work,
 } from "../../index";
 import { AnimatePresence } from "framer-motion";
@@ -21,7 +21,7 @@ const Routers = () => {
         <Route path="/work" element={<Work />} />
         <Route path="/project/detail/:title" element={<Project_Modal />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/terms" element={<Terms />} />
+        {/* <Route path="/terms" element={<Terms />} /> */}
         <Route path="/*" element={<ErrorPage />} />
       </Routes>
     </AnimatePresence>

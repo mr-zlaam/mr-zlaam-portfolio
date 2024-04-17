@@ -50,7 +50,7 @@ const Contact = () => {
             className={`${
               isDarkMode ? "link_animation_light " : "link_animation_light "
             }`}
-            to={"/terms"}
+            to={"/this-page-is-not-available-right-now-we-will-update-it-soon"}
           >
             Read This Before Contact <LiaExternalLinkSquareAltSolid />
           </Link>
