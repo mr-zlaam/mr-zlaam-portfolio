@@ -48,7 +48,7 @@ html {
   }
   .navbar_invisible {
     @include navbar_toggle;
-    transform: translateY(-100%);
+    transform: translateY(-105%);
     transition: transform 0.2s linear;
   }
   .bg_dark {
