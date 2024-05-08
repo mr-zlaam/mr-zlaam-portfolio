@@ -53,6 +53,7 @@
     & .project_desc_txt {
       font-size: $font_md_3;
       font-family: $font_md;
+      padding: 0 2rem;
 
       text-align: start;
       letter-spacing: 2px;
@@ -60,6 +61,7 @@
     }
     & .project_desc {
       height: 1fr;
+      margin: 0 1rem;
       padding: 1rem;
       font-family: $font_regular;
       letter-spacing: 3px;

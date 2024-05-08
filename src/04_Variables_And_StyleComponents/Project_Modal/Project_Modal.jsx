@@ -30,22 +30,19 @@ function Project_Modal() {
       </div>
     );
   if (isError) return <div className="loadingState">!{error.message}</div>;
-  const theme = localStorage.getItem("isDarkMode");
 
   return (
     <>
       <main className="main_modal_container">
         <Link title="back" to={"/work"} className="return_to_main_page">
-          <FaArrowLeft
-            color={theme && theme === "true" ? "#ffffff" : "#28282b"}
-          />
+          <FaArrowLeft color="#ffffff" />
         </Link>
         <section className="modal_image_container">
           <LazyLoadImage
             effect="blur"
             src={data[0]?.imageContainer["image"]}
             alt={data[0]?.project_title}
-            width={1000}
+            width={950}
           />
         </section>
         <div className="description_controller">
