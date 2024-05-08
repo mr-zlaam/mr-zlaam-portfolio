@@ -1,13 +1,10 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 
 import "./Home.scss";
-import { Context } from "../../index";
 
 const Home = () => {
-  const { setIsErrorPage } = useContext(Context);
   let pageName = "Home";
   useEffect(() => {
-    setIsErrorPage(false);
     document.title = `Zlaam | ${pageName}`;
     window.scrollTo(0, 0);
   }, [pageName]);

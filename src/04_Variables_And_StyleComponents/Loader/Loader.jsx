@@ -1,18 +1,12 @@
-import { useContext } from "react";
 import "./Loader.scss";
-import { Context } from "../../index";
 
 const Loader = () => {
-  const { isOnline } = useContext(Context);
   return (
     <div
       aria-label="Orange and tan hamster running in a metal wheel"
       role="img"
       className="wheel-and-hamster"
     >
-      {!isOnline && (
-        <span className="internetChecker">Please check your internet !</span>
-      )}
       <div className="wheel"></div>
       <div className="hamster">
         <div className="hamster__body">

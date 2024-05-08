@@ -5,16 +5,6 @@ import { Link } from "react-router-dom";
 import { Context } from "../../index";
 
 const ErrorPage = () => {
-  const { setIsErrorPage } = useContext(Context);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    const Error_toggler = () => {
-      setIsErrorPage(true);
-    };
-    Error_toggler();
-  }, [ErrorPage, setIsErrorPage]);
   const { isDarkMode } = useContext(Context);
 
   let pageName = "Not Found";

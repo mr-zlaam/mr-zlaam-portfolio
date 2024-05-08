@@ -5,15 +5,11 @@ export const ContextProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedData, setIsSelectedData] = useState(null);
-  const [isErrorPage, setIsErrorPage] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   return (
     <Context.Provider
       value={{
-        isOnline,
-        setIsOnline,
         isImageLoaded,
         setIsImageLoaded,
         isDarkMode,
@@ -22,8 +18,6 @@ export const ContextProvider = ({ children }) => {
         setIsModalOpen,
         isSelectedData,
         setIsSelectedData,
-        isErrorPage,
-        setIsErrorPage,
       }}
     >
       {children}

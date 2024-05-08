@@ -9,7 +9,6 @@ export { default as HeaderLinks } from "./02_Components/01_NavBar/02_HeaderLinks
 export { default as Theme } from "./02_Components/03_Theme/Theme_toggler";
 export { default as Cursor } from "./02_Components/Cursor/Cursor";
 //? Routers
-export { default as Routers } from "./02_Components/02_Routers/01_Routers";
 //? Pages
 export { default as Home } from "./03_Pages/01_Home/Home";
 export { default as Expertise } from "./03_Pages/02_Expertise/Expertise";

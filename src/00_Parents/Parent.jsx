@@ -1,14 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { Cursor, Loader } from "../index";
 import "./Parents.scss";
-import { Header, Loader, Routers, Context } from "../index";
-import { useRef } from "react";
-import { useLocation } from "react-router-dom";
 
-const Parents = () => {
+const Parents = ({ children }) => {
   const [isAppReady, setIsAppReady] = useState(false);
 
   const DivRef = useRef(null);
-  const { isErrorPage } = useContext(Context);
   const theme = localStorage.getItem("isDarkMode");
 
   useEffect(() => {
@@ -20,8 +17,6 @@ const Parents = () => {
     }, 3000);
     return () => clearTimeout(simTiming, 0);
   }, []);
-  const getLocation = useLocation();
-  const getCurrentpath = getLocation.pathname.includes("/project/detail");
   return (
     <>
       <div>
@@ -33,15 +28,9 @@ const Parents = () => {
               : "light_bg black_color"
           } `}
         >
-          {!isAppReady ? (
-            <Loader />
-          ) : (
-            <div>
-              {isErrorPage || getCurrentpath ? null : <Header />}
+          <Cursor />
 
-              <Routers />
-            </div>
-          )}
+          {!isAppReady ? <Loader /> : <div>{children}</div>}
         </div>
       </div>
     </>

@@ -1,14 +1,11 @@
-import "./Header.scss";
-import { useCallback, useContext, useEffect, useState } from "react";
-import { Context, Theme, HeaderLinks, Link } from "../../../index";
+import { useCallback, useState } from "react";
 import { MdClear } from "react-icons/md";
 import { RiMenu3Fill } from "react-icons/ri";
+import { HeaderLinks, Link, Theme } from "../../../index";
+import "./Header.scss";
 const Header = () => {
-  const { setIsErrorPage } = useContext(Context);
   const [isMenuOpens, setIsMenuOpens] = useState(false);
-  useEffect(() => {
-    setIsErrorPage(false);
-  }, [setIsErrorPage]);
+
   const menu_closer = () => {
     setIsMenuOpens(false);
   };
