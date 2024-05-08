@@ -1,12 +1,11 @@
-import { useContext, useEffect } from "react";
-import "./Contact.scss";
-import { Link } from "react-router-dom";
-import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
-import { Context } from "../../index";
-import { MdEmail } from "react-icons/md";
+import { useEffect } from "react";
 import { BsMessenger } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
+import { LiaExternalLinkSquareAltSolid } from "react-icons/lia";
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
+import "./Contact.scss";
 
 const Contact = () => {
   const Icons = [
@@ -41,16 +40,16 @@ const Contact = () => {
     window.scrollTo(0, 0);
     document.title = `Zlaam | ${pageName}`;
   }, [pageName]);
-  const { isDarkMode } = useContext(Context);
   return (
     <>
       <div className="contact_container">
         <span className="cta term_navigator">
           <Link
-            className={`${
-              isDarkMode ? "link_animation_light " : "link_animation_light "
+            className={`
+             link_animation_light 
             }`}
-            to={"/this-page-is-not-available-right-now-we-will-update-it-soon"}
+            onClick={() => alert("We will Update this page soon")}
+            to={"/contact"}
           >
             Read This Before Contact <LiaExternalLinkSquareAltSolid />
           </Link>
@@ -66,11 +65,7 @@ const Contact = () => {
                     <Link
                       to={icon.path}
                       target="_blank"
-                      className={`${
-                        isDarkMode
-                          ? "link_animation_light white_color"
-                          : "link_animation_dark black_color"
-                      }`}
+                      className={`link_animation_light white_color`}
                     >
                       {icon.IconName}
                     </Link>
