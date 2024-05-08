@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Context } from "./Context";
 
 export const ContextProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  // const [isDarkMode, setIsDarkMode] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedData, setIsSelectedData] = useState(null);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -12,8 +12,8 @@ export const ContextProvider = ({ children }) => {
       value={{
         isImageLoaded,
         setIsImageLoaded,
-        isDarkMode,
-        setIsDarkMode,
+        // isDarkMode,
+        // setIsDarkMode,
         isModalOpen,
         setIsModalOpen,
         isSelectedData,

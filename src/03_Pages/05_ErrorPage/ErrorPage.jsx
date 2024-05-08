@@ -1,12 +1,9 @@
+import { useEffect } from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { useContext, useEffect } from "react";
-import "./ErrorPage.scss";
 import { Link } from "react-router-dom";
-import { Context } from "../../index";
+import "./ErrorPage.scss";
 
 const ErrorPage = () => {
-  const { isDarkMode } = useContext(Context);
-
   let pageName = "Not Found";
   useEffect(() => {
     document.title = `Zlaam | ${pageName}`;
@@ -17,14 +14,7 @@ const ErrorPage = () => {
         <span>Error 404: </span> <span> Page Not Found</span>
       </div>
       <span className="cta homeNavigate">
-        <Link
-          to={"/"}
-          className={`${
-            isDarkMode
-              ? " link_animation_light white_color"
-              : " link_animation_dark black_color"
-          }`}
-        >
+        <Link to={"/"} className={`link_animation_light white_color`}>
           <span>Home</span> <FaLongArrowAltRight />
         </Link>
       </span>
