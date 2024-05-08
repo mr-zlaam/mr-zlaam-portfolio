@@ -6,7 +6,6 @@ const Parents = ({ children }) => {
   const [isAppReady, setIsAppReady] = useState(false);
 
   const DivRef = useRef(null);
-  const theme = localStorage.getItem("isDarkMode");
 
   useEffect(() => {
     const handleLoad = () => {
@@ -20,14 +19,7 @@ const Parents = ({ children }) => {
   return (
     <>
       <div>
-        <div
-          ref={DivRef}
-          className={`child_container  ${
-            theme && theme === "true"
-              ? "dark_bg white_color"
-              : "light_bg black_color"
-          } `}
-        >
+        <div ref={DivRef} className={`child_container dark_bg white_color`}>
           <Cursor />
 
           {!isAppReady ? <Loader /> : <div>{children}</div>}

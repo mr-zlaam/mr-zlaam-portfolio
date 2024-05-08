@@ -1,15 +1,10 @@
-import { useContext } from "react";
-import "./HeaderLinks.scss";
-import { Context } from "../../../index";
 import { NavLink } from "react-router-dom";
+import "./HeaderLinks.scss";
 const HeaderLinks = ({ isMenuOpens, setIsMenuOpens }) => {
-  const { isDarkMode } = useContext(Context);
   const menu_closer = () => {
     setIsMenuOpens(false);
   };
-  let themeClass = isDarkMode
-    ? "link_animation_light white_color"
-    : "link_animation_dark black_color ";
+  let themeClass = "link_animation_light white_color";
   const RoutesPath = [
     {
       path: "/",
@@ -32,10 +27,9 @@ const HeaderLinks = ({ isMenuOpens, setIsMenuOpens }) => {
   return (
     <>
       <nav
-        className={` ${isMenuOpens ? "navbar_visible " : "navbar_invisible"}  ${
-          isDarkMode ? "white_color  " : "black_color "
-        }
-        ${isDarkMode ? "bg_dark  " : "bg_light "}
+        className={` ${
+          isMenuOpens ? "navbar_visible " : "navbar_invisible"
+        } white_color bg_dark
           `}
       >
         {RoutesPath?.map((data) => {

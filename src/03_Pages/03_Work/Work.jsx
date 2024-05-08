@@ -1,18 +1,16 @@
-import "./Work.scss";
-import project_data from "../../Work.json";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
-import { Link, useLocation } from "react-router-dom";
 import { HiDownload } from "react-icons/hi";
-import { useContext } from "react";
-import { Context } from "../../01_Context/Context";
-import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
+import { Link, useLocation } from "react-router-dom";
 import ExpertieseLoader from "../../04_Variables_And_StyleComponents/ExpertiseLoader/ExpertiseLoader";
+import Project_Card from "../../04_Variables_And_StyleComponents/Project_Card/Project_Card";
+import project_data from "../../Work.json";
+import "./Work.scss";
 
 const Work = () => {
   const location = useLocation();
   const getlocation = location.pathname === "/work";
   if (getlocation) document.title = `Zlaam | Work`;
-  const { isDarkMode } = useContext(Context);
+
   const fetchImages = () => {
     const url = project_data;
     return url;
@@ -24,11 +22,7 @@ const Work = () => {
     staleTime: Infinity,
     cacheTime: 120000,
   });
-  const LinkClass = `${
-    isDarkMode
-      ? "link_animation_light white_color"
-      : "link_animation_dark black_color"
-  }`;
+  const LinkClass = "link_animation_light white_color";
   if (isLoading)
     return (
       <div className="loadingState">
